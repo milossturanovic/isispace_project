@@ -1,0 +1,231 @@
+#events {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+#events h2 {
+  color: var(--Blue, #1e3c72);
+  font-family: Geologica;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 65px */
+  text-transform: uppercase;
+}
+
+#events .intro {
+  margin-bottom: 96px;
+}
+
+#events .event-month {
+  margin-bottom: 60px;
+}
+
+#events .event-list {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+#events .event-month .month {
+  color: var(--Blue, #1e3c72);
+  /* Body regular 24 (aa) */
+  font-family: Geologica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  text-transform: capitalize;
+}
+
+#events .event-month hr {
+  margin-left: 50px;
+}
+
+#events .event-month .month-day {
+  color: var(--Blue, #1e3c72);
+  text-align: center;
+
+  /* H3 semibold 50 (AA) */
+  font-family: Geologica;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 65px */
+  text-transform: uppercase;
+}
+
+#events .event-month .margin-left {
+  margin-left: 70px;
+}
+
+#events .event-month .location {
+  color: var(--Blue, #1e3c72);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+#events .event-month h3 {
+  color: var(--Blue, #1e3c72);
+
+  /* H5 semibold 36 (AA) */
+  font-family: Geologica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+/* Hexagon button with SVG background */
+#events .event-month .hexagon-button {
+  position: relative;
+  display: grid;
+  width: 140px;
+  height: 44px;
+  background: url("images/hexagon-blue-event.svg") no-repeat center !important;
+  background-size: auto;
+  background-size: contain;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 44px !important;
+  color: #1e3c72;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+/* Hexagon button with SVG background */
+#events .event-month .hexagon-button:hover {
+  position: relative;
+  display: grid;
+  width: 140px;
+  height: 44px;
+  background: url("images/hexagon-red-event.svg") no-repeat center !important;
+  background-size: auto;
+  background-size: contain;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-sizing: border-box;
+  color: #ca202e !important;
+}
+
+/* Adding silver lines */
+#events .event-month .hexagon-button::before,
+#events .event-month .hexagon-button::after {
+  content: "";
+  position: absolute;
+  width: 40px; /* Adjust the size of the silver lines */
+  height: 4px; /* Thickness of the silver lines */
+  background-color: #d3d3d3; /* Silver color */
+  z-index: 2; /* Ensure they appear above the SVG background */
+  transition: all 0.3s ease;
+}
+
+#events .event-month .hexagon-button::before {
+  top: 0px;
+  left: 63%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 37px;
+}
+
+#events .event-month .hexagon-button::after {
+  bottom: 0px;
+  left: 37%;
+  transform: translateX(-50%);
+  height: 2px;
+}
+
+/* Hover effect */
+#events .event-month .hexagon-button:hover {
+  color: var(--blue-transparent); /* Change text color on hover */
+}
+
+#events .event-month .hexagon-button:hover::before {
+  width: 30px; /* Expand the silver line on hover */
+  left: 68%; /* Adjust the left position to move to the right */
+  transform: translateX(-50%) translateX(5px); /* Moves the line slightly to the right */
+}
+
+#events .event-month .hexagon-button:hover::after {
+  width: 30px; /* Expand the silver line on hover */
+  left: 32%; /* Adjust the left position to move to the left */
+  transform: translateX(-50%) translateX(-5px); /* Moves the line slightly to the left */
+}
+
+@media screen and (max-width: 992px) {
+  #events .event-month .month-day {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 111.111% */
+    text-transform: uppercase;
+  }
+
+  #events .event-month h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+    text-transform: uppercase;
+  }
+
+  #events .event-month .month {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+  }
+
+  #events .event-month .margin-left {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #events .event-month hr {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #events .event-month .month-day {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 111.111% */
+    text-transform: uppercase;
+  }
+
+  #events .event-month .location {
+    margin-top: 24px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  #events .event-month h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+    text-transform: uppercase;
+  }
+
+  #events .event-month .margin-left {
+    margin-left: 0px;
+  }
+
+  #events .event-month .hexagon-button {
+    margin-top: 24px !important;
+  }
+}

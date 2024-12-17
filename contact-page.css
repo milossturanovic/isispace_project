@@ -1,0 +1,548 @@
+/* Hero Start */
+
+#hero .image-background {
+  background-image: url("images/scene-with-planets\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 844px;
+  border-radius: 16px;
+  padding: 0px 128px 0px 64px;
+  position: relative; /* Make it a positioned element for the pseudo-element */
+  overflow: hidden; /* Ensure the pseudo-element stays within the container */
+}
+
+#hero .image-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity (0.5) as needed */
+  border-radius: 16px; /* Maintain the same border radius */
+  z-index: 1; /* Ensure the overlay appears above the image */
+}
+
+#hero .image-background * {
+  position: relative;
+  z-index: 2;
+}
+
+#hero h1 {
+  color: var(--White, #fff);
+  /* H3 semibold 50 (AA) */
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 65px */
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+#hero p {
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  margin-bottom: 40px;
+  width: 73%;
+}
+
+#hero .button-wrapper a {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+/* Hexagon button with SVG background */
+#hero .hexagon-button {
+  position: relative;
+  display: grid;
+  width: 254px;
+  height: 54px;
+  line-height: 54px !important;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #1e3c72;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  background: url("images/white-hexagon.svg") no-repeat center;
+  background-size: auto;
+  background-size: contain;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Adding silver lines */
+#hero .hexagon-button::before,
+#hero .hexagon-button::after {
+  content: "";
+  position: absolute;
+  width: 40px; /* Adjust the size of the silver lines */
+  height: 4px; /* Thickness of the silver lines */
+  background-color: #1d1e31; /* Silver color */
+  z-index: 2; /* Ensure they appear above the SVG background */
+  transition: all 0.3s ease;
+}
+
+#hero .hexagon-button::before {
+  top: 0px;
+  left: 63%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 75px;
+}
+
+#hero .hexagon-button::after {
+  bottom: 0px;
+  left: 37%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 120px;
+}
+
+#hero .hexagon-button:hover::before {
+  left: 28%;
+}
+
+#hero .hexagon-button:hover::after {
+  left: 65%;
+}
+
+#hero .stats {
+  padding: 0px;
+  display: inline-block; /* Makes the container fit its content */
+  text-align: right; /* Aligns the content to the right */
+}
+
+#hero .stats .number {
+  color: var(--White, #fff);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 62.4px */
+}
+
+#hero .line {
+  height: 2px;
+  border-top: 2px solid white; /* Set the thickness and color */
+  width: 277px; /* Adjust the width of the line */
+  margin-left: auto; /* Push the line to the right */
+  opacity: 1;
+}
+
+#hero .stats .length {
+  color: var(--White, #fff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1200px) {
+  #hero .stats {
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero h1 {
+    color: var(--White, #fff);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 111.111% */
+    text-transform: uppercase;
+  }
+
+  #hero .image-background {
+    height: 696px;
+    border-radius: 16px;
+    background-position: center;
+    padding: 42px 24px 0px;
+    align-items: flex-start !important;
+  }
+
+  #hero .stats {
+    margin-bottom: 20%;
+  }
+
+  #hero .stats .number {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+  }
+
+  #hero .line {
+    width: 231px;
+  }
+
+  #hero .stats .length {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+  }
+
+  #hero p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  #hero .button-wrapper {
+    justify-content: left !important;
+  }
+}
+
+/* Hero End */
+
+#sales {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
+#sales .row .custom-column {
+  background-color: var(--Blue);
+  padding: 32px;
+  border-radius: 20px;
+}
+
+#sales .row .custom-column span {
+  color: var(--White, #fff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  text-transform: capitalize;
+}
+
+#sales .row .custom-column h3 {
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-bottom: 56px !important;
+}
+
+#sales a:active,
+#sales a:hover {
+  outline: 0;
+}
+
+#sales .link-arrow {
+  display: inline-block;
+  flex: 0 auto;
+  -webkit-box-flex: 0;
+  min-width: 100%;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 8px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid white;
+}
+
+#sales .link-arrow:hover {
+  color: var(--Red, #ca202e);
+  border-bottom: 1px solid var(--Red, #ca202e);
+}
+
+#sales .link-arrow::before,
+#sales .link-arrow::after {
+  content: url("images/arrow-right-white.svg");
+  display: block;
+  font-size: inherit;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(0%, -50%);
+  transition: all 0.5s cubic-bezier(0.25, 0.25, 0.08, 1.08);
+}
+
+#sales .link-arrow:hover::before {
+  content: url("images/arrow-right-red.svg");
+}
+
+#sales .link-arrow.font-reg::before,
+#sales .link-arrow.font-reg::after {
+  font-weight: 300;
+}
+#sales .link-arrow::before {
+  opacity: 0;
+  transform: translate(-100%, -50%);
+}
+
+#sales .link-arrow:hover::before {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+#sales .link-arrow:hover::after {
+  opacity: 0;
+  transform: translate(100%, -50%);
+}
+
+/* Adjustments for medium screens */
+@media screen and (max-width: 767px) {
+  #sales .row .custom-column span {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+  }
+
+  #sales .row .custom-column h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+    text-transform: uppercase;
+  }
+}
+
+/* General start */
+
+#general {
+  margin-bottom: 96px;
+}
+
+#general h2 {
+  color: var(--Blue, #1e3c72);
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 65px */
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+#general .row .contact-box {
+  border-top: 1px solid rgba(30, 60, 114, 0.4);
+}
+
+#general .row .contact-box h3 {
+  margin-top: 24px;
+  margin-bottom: 56px;
+  color: var(--Blue, #1e3c72);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+}
+
+#general .row .contact-box p {
+  color: var(--Blue, #1e3c72);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  text-transform: capitalize;
+  padding-right: 30px;
+}
+
+#general .row .contact-box a {
+  color: var(--Blue, #1e3c72);
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+}
+
+#general .row .contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* Adjustments for medium screens */
+@media screen and (max-width: 767px) {
+  #general h2 {
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 111.111% */
+    text-transform: uppercase;
+  }
+
+  #general .row .contact-box h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 120% */
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  #general .row .contact-box {
+    margin-bottom: 40px;
+  }
+
+  #general .row .contact-box p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+  }
+
+  #general .row .contact-box a {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+  }
+}
+
+/* GEneral end */
+
+/* Contact Start */
+
+#contact-us {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 423px;
+  padding: 96px;
+  position: relative; /* Make it a positioned element for the pseudo-element */
+  overflow: hidden; /* Ensure the pseudo-element stays within the container */
+}
+
+#contact-us h2 {
+  margin-left: 25%;
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+  width: 55%;
+}
+
+#contact-us a:active,
+#contact-us a:hover {
+  outline: 0;
+}
+
+#contact-us .link-arrow {
+  display: inline-block;
+  flex: 0 auto;
+  -webkit-box-flex: 0;
+  width: 400px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 90px !important;
+  padding-bottom: 14px;
+  border-bottom: 1px solid white;
+}
+
+#contact-us .link-arrow:hover {
+  color: var(--Red, #ca202e);
+  border-bottom: 1px solid var(--Red, #ca202e);
+}
+
+#contact-us .link-arrow::before,
+#contact-us .link-arrow::after {
+  content: url("images/arrow-right-white.svg");
+  display: block;
+  font-family: Inter;
+  font-size: inherit;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(0%, -50%);
+  transition: all 0.5s cubic-bezier(0.25, 0.25, 0.08, 1.08);
+}
+
+#contact-us .link-arrow:hover::before {
+  content: url("images/arrow-right-red.svg");
+}
+
+#contact-us .link-arrow.font-reg::before,
+#contact-us .link-arrow.font-reg::after {
+  font-weight: 300;
+}
+
+#contact-us .link-arrow::before {
+  opacity: 0;
+  transform: translate(-100%, -50%);
+}
+
+#contact-us .link-arrow:hover::before {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+#contact-us .link-arrow:hover::after {
+  opacity: 0;
+  transform: translate(100%, -50%);
+}
+
+/* Adjustments for medium screens */
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 767px) {
+  #contact-us {
+    padding: 40px 12px;
+    height: 525px;
+  }
+
+  #contact-us h2 {
+    color: var(--White, #fff);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 111.111% */
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0px;
+  }
+
+  
+
+  #contact-us .row {
+    margin-top: 0px;
+  }
+
+  #contact-us .link-arrow {
+    width: 100%;
+    margin-top: 32px !important;
+  }
+}
+
+/* Contact end */

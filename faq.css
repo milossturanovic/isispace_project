@@ -1,0 +1,171 @@
+#faq {
+  padding: 96px;
+}
+
+#faq h2 {
+  color: var(--Blue, #1e3c72);
+  text-align: center;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 96px; /* 120% */
+  text-transform: uppercase;
+}
+
+#faq .heading {
+  text-align: center;
+}
+
+#faq p {
+  color: var(--Blue, #1e3c72);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  width: 499px;
+  margin-top: 16px;
+}
+
+#faq .accordion {
+  margin-top: 64px;
+}
+
+#faq .accordion-button {
+  color: var(--Blue, #1e3c72);
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+}
+
+#faq .icon-plus-minus {
+  padding-left: 15%;
+}
+
+#faq .accordion {
+  padding: 40px;
+  border-radius: 20px;
+  background: var(--Light-blue, #f5f8ff);
+}
+
+#faq .accordion-item {
+  border: 0px;
+}
+
+#faq .accordion-button {
+  background-color: #f5f8ff;
+}
+
+#faq .accordion-body {
+  background: var(--Light-blue, #f5f8ff);
+  width: 73%;
+  color: var(--Blue, #1e3c72);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+#faq .accordion-item {
+  background: var(--Light-blue, #f5f8ff);
+}
+
+#faq .accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+
+#faq .accordion-item:last-of-type > .accordion-collapse {
+  background: var(--Light-blue, #f5f8ff) !important;
+}
+
+.accordion-button::after {
+  margin-left: auto;
+  background-image: url("images/Plus.svg");
+  background-repeat: no-repeat;
+  transition: 0.7s;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("images/Minus.svg");
+
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  margin-bottom: 30px;
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 1200px) {
+  #faq {
+    padding: 96px 12px;
+  }
+
+  .accordion-button::after {
+    margin-left: auto;
+    background-image: url("images/Plus.svg");
+    background-repeat: no-repeat;
+    transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-bottom: 30px;
+    transition: 0.7s;
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("images/Minus.svg");
+
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-bottom: 30px;
+    transition: 0.7s;
+  }
+}
+@media screen and (max-width: 767px) {
+  #faq {
+    padding: 96px 12px;
+  }
+
+  #faq h2 {
+    color: var(--Blue, #1e3c72);
+
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 65px */
+    text-transform: uppercase;
+  }
+
+  #faq .accordion {
+    padding: 10px;
+  }
+
+  #faq .accordion-button {
+    color: var(--Blue, #1e3c72);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  #faq p {
+    width: 100%;
+  }
+
+  #faq .accordion-body {
+    width: 100%;
+    color: var(--Blue, #1e3c72);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}

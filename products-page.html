@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="/libs/aos/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="/libs/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick-theme.css" />
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="products-page.css">
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-xl">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/isispace_logo.svg" alt="Logo">
+            </a>
+
+            <!-- Navbar Toggler (for mobile view) -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/toggle-menu.svg" alt="Toggle menu icon"
+                    class="navbar-toggler-icon custom-toggler-icon img-fluid">
+            </button>
+
+            <!-- Navbar Links and Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <!-- Dropdown for Satellites with Submenu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="satellitesDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Satellites
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="satellitesDropdown">
+                            <li><a class="dropdown-item" href="#">Small Satellites</a></li>
+                            <li><a class="dropdown-item" href="#">CubeSats</a></li>
+                            <li><a class="dropdown-item" href="#">Nanosatellites</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="launchersDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Launchers
+
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="launchersDropdown">
+                            <li><a class="dropdown-item" href="#">Heavy Launchers</a></li>
+                            <li><a class="dropdown-item" href="#">Medium Launchers</a></li>
+                            <li><a class="dropdown-item" href="#">Small Launchers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="productsDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#">Solar Panels</a></li>
+                            <li><a class="dropdown-item" href="#">Modular Systems</a></li>
+                            <li><a class="dropdown-item" href="#">Radios</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Remaining Navigation Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Newsroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meet Us</a>
+                    </li>
+                </ul>
+
+                <!-- Search Icon -->
+                <a class="nav-link text-center text-xl-start" href="#">
+                    <img src="images/search.svg" alt="Search" class="custom-search-icon">
+                </a>
+
+                <!-- Button Wrapper -->
+                <div class="button-wrapper">
+                    <a href="#" class="hexagon-button">Inquire</a>
+                </div>
+
+
+
+            </div>
+        </div> <!-- End of Container -->
+    </nav>
+
+
+
+
+
+    <section id="banner-section">
+        <div class="container-fluid container-md">
+            <div class="row gx-5">
+                <div class="col-12 col-md-6 col-lg-7 d-flex flex-column flex-lg-row slider-column">
+
+                    <!-- Thumbnails (appears below the main slider on mobile, left side on larger screens) -->
+                    <div class="slider-galeria-thumbs order-2 order-lg-1">
+                        <div><span><img class="img-fluid" src="/images/image-1.jpg" alt="Thumbnail 1"></span></div>
+                        <div><span><img src="/images/image-2.jpg" alt="Thumbnail 2"></span></div>
+                        <div><span><img src="/images/image-3.jpg" alt="Thumbnail 3"></span></div>
+                        <div><span><img src="/images/image-4.jpg" alt="Thumbnail 4"></span></div>
+                        <div><span><img src="/images/image-1.jpg" alt="Thumbnail 1"></span></div>
+                        <div><span><img src="/images/image-2.jpg" alt="Thumbnail 2"></span></div>
+                        <div><span><img src="/images/image-3.jpg" alt="Thumbnail 3"></span></div>
+                        <div><span><img src="/images/image-4.jpg" alt="Thumbnail 4"></span></div>
+                    </div>
+
+                    <!-- Main image slider (appears before thumbnails on mobile, right side on larger screens) -->
+                    <div class="slider-galeria order-1 order-lg-2">
+                        <div><span><img class="img-fluid" src="/images/image-1.jpg" alt="Image 1"></span></div>
+                        <div><span><img class="img-fluid" src="/images/image-2.jpg" alt="Image 2"></span></div>
+                        <div><span><img class="img-fluid" src="/images/image-3.jpg" alt="Image 3"></span></div>
+                        <div><span><img class="img-fluid" src="/images/image-4.jpg" alt="Image 4"></span></div>
+                        <div><span><img class="img-fluid" src="/images/image-1.jpg" alt="Image 1"></span></div>
+                        <div><span><img class="img-fluid" src="/images/image-2.jpg" alt="Image 2"></span></div>
+                        <div><span><img class="img-fluid" src="/images/image-3.jpg" alt="Image 3"></span></div>
+                        <div><span><img class="img-fluid" src="/images/image-4.jpg" alt="Image 4"></span></div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-5 d-flex flex-column justify-content-center hero-column">
+
+                    <h2>CubeSat Antenna <br> System for 1U/3U</h2>
+
+
+                    <p>The ISISPACE CubeSat Antenna System 1U/3U contains up to four tape spring antennas
+                        of up to 55 cm length. The deployment system relies on a thermal knife composed
+                        of one wire and two redundant heating
+                        elements per tape. RF phasing / BalUn circuitry ties the antennas
+                        together in the user-defined configuration.
+                    </p>
+
+                    <span class="read-more">
+                        <a href="#">Read more <img src="/images/chevron.svg" alt=""></a>
+                    </span>
+
+                    <div class="type d-flex flex-column">
+
+                        <span>Type</span>
+                        <div class="btn-group">
+
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Choose an option
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="button-wrapper-product">
+                        <a href="#" class="hexagon-button">Contact</a>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section id="documents">
+
+
+        <div class="container">
+
+            <div class="row gx-3 gy-3">
+
+                <div class="col-auto">
+
+                    <p class="intro">Lorem ipsum dolor sit amet consectetur.
+                        Rhoncus vel diam nunc fames velit quis.
+                        Tortor sagittis neque suscipit rhoncus
+                        sed bibendum vitae. Feugiat varius lorem
+                        eget non non. Duis id sagittis non praesent.
+                        Odio velit pellentesque tempus duis sit.
+                        Augue suspendisse integer sit tellus nunc aliquam.
+                        Arcu sed euismod mattis nulla nisl.
+                    </p>
+
+                </div>
+
+
+
+                <div class="col-6 col-md-auto d-flex">
+                    <div class="document d-flex flex-column justify-content-between">
+                        <img src="images/description.svg" alt="">
+                        <p>0ption sheet</p>
+                        <span>
+                            <a href="#"><img class="download-icon" src="images/download.svg" alt=""> Download</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-6 col-md-auto d-flex">
+                    <div class="document d-flex flex-column justify-content-between ">
+                        <img src="images/description.svg" alt="">
+                        <p>Option sheet</p>
+                        <span>
+                            <a href="#"><img class="download-icon" src="images/download.svg" alt=""> Download</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-6 col-md-auto d-flex">
+                    <div class="document d-flex flex-column justify-content-between ">
+                        <img src="images/description.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <span>
+                            <a href="#"><img class="download-icon" src="images/download.svg" alt=""> Download</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-6 col-md-auto d-flex">
+                    <div class="document d-flex flex-column justify-content-between ">
+                        <img src="images/description.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <span>
+                            <a href="#"><img class="download-icon" src="images/download.svg" alt=""> Download</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Column 5 -->
+                <div class="col-6 col-md-auto d-flex">
+                    <div class="document d-flex flex-column justify-content-between ">
+                        <img src="images/description.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <span>
+                            <a href="#"><img class="download-icon" src="images/download.svg" alt=""> Download</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-6 col-md-auto d-flex">
+                    <div class="document d-flex flex-column justify-content-between ">
+                        <img src="images/description.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet dasdsa</p>
+                        <span>
+                            <a href="#"><img class="download-icon" src="images/download.svg" alt=""> Download</a>
+                        </span>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+    <section id="hotspots">
+
+        <div class="container">
+
+
+            <div class="row">
+
+
+
+                <div class="col text-center">
+
+                    <img class="img-fluid" src="/images/hotspot product.jpg" alt="">
+
+                    <!-- Hotspot elements -->
+                    <div class="hotspot position-1" data-text="Peak Power Generation up to 20W">
+                        <div class="hotspot-text"></div>
+                    </div>
+                    <div class="hotspot position-2" data-text="High-Efficiency Solar Panel">
+                        <div class="hotspot-text"></div>
+                    </div>
+                    <div class="hotspot position-3" data-text="Advanced Battery Storage up to 30W">
+                        <div class="hotspot-text"></div>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <section id="product-spec">
+        <div class="container">
+            <div class="row">
+                <h2 class="w-100 text-center">Product Specification</h2>
+                <div class="col-12 d-flex justify-content-center">
+                    <!-- Start of the centered responsive table -->
+                    <div class="table-responsive">
+                        <table class="table color-table">
+                            <tbody>
+                                <tr>
+                                    <th>Mass:</th>
+                                    <td>
+                                        < 100g</td>
+                                </tr>
+                                <tr>
+                                    <th>Envelope stowed (l x w x h):</th>
+                                    <td>98x98x7mm (supplied aluminium cover plate included)</td>
+                                </tr>
+                                <tr>
+                                    <th>Power consumption:</th>
+                                    <td>Nominal: &lt; 40 mW (3V3 model)</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Power consumption:</th>
+                                    <td>
+                                        <p>
+                                            Nominal: < 40 mW (3V3 model) <br>
+                                                Nominal: < 60 mW (5V model) <br>
+                                                    During deployment: 2W </p>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+
+                                    <th>Interfaces:</th>
+                                    <td>
+                                        <p>Electrical: Miniature 9 pin OMNETICS connector <br> Data: I2C <br> Other
+                                            protocol on demand</p>
+                                    </td>
+
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <th>Frequency Range:</th>
+                                    <td>
+                                        <p>>10MHz useable bandwidth in frequency range specified</p>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+
+                                    <th>Antenna Return Loss at resonance frequency:</th>
+                                    <td>
+                                        <p>> 10 db (VSWR < 2:1)</p>
+                                    </td>
+
+
+                                </tr>
+
+
+
+                                <tr>
+
+                                    <th>Operational temperature range:</th>
+                                    <td>
+                                        <p>-20°C to +60°C</p>
+                                    </td>
+
+
+                                </tr>
+
+                                <tr>
+
+                                    <th>Antenna main beam gain:</th>
+                                    <td>
+                                        <p>UHF: 0 dBi <br> VHF: 0 dBi </p>
+                                    </td>
+
+
+                                </tr>
+
+
+
+                                <tr>
+
+                                    <th>Max RF Power:</th>
+                                    <td>
+                                        <p>2W</p>
+                                    </td>
+
+
+                                </tr>
+
+
+
+                                <tr>
+
+                                    <th>Bandwidth:</th>
+                                    <td>
+                                        <p>UHF: >50 Mhz (-10db bandwidth) <br> VHF: >10 Mhz (-10db bandwidth)</p>
+                                    </td>
+
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <th>Antenna element deployment duration:</th>
+                                    <td>
+                                        <p>
+                                            < 3s above 15°C operating temperature</p>
+                                    </td>
+
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End of the centered responsive table -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="qualification">
+        <div class="container">
+            <h2 class="w-100 text-center">Qualification and Acceptance Testing</h2>
+            <div class="col-12 d-flex justify-content-center">
+                <!-- Start of the centered responsive table -->
+                <div class="table-responsive">
+                    <table class="table qualification-table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"><span>QT</span>
+                                    <p>Is performed on the design/qualification model</p>
+                                </th>
+                                <th scope="col"><span>AT</span>
+                                    <p>Is performed on the unit to be shipped</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Functional</th>
+                                <td class="text-center">
+                                    <img src="/images/check.svg">
+                                </td>
+                                <td class="text-center">
+                                    <img src="/images/check.svg">
+                                    <img src="/images/check_indeterminate.svg">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Vibration</th>
+                                <td class="text-center">
+                                    <img src="/images/check.svg">
+                                </td>
+                                <td class="text-center">
+                                    <img src="/images/check_indeterminate.svg">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mechanical Shock</th>
+                                <td class="text-center">
+                                    <img src="/images/check.svg">
+                                </td>
+                                <td class="text-center">
+                                    <img src="/images/check_indeterminate.svg">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Thermal Cycling</th>
+                                <td class="text-center">
+                                    <img src="/images/check.svg">
+                                </td>
+                                <td class="text-center">
+                                    <img src="/images/check.svg">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Thermal Vacuum</th>
+                                <td class="text-center">
+                                    <img src="/images/check.svg">
+                                </td>
+                                <td class="text-center">
+                                    <img src="/images/check_indeterminate.svg">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End of the centered responsive table -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="includes">
+        <div class="container">
+            <h2 class="w-100 text-center">Included in the box</h2>
+            <div class="row px-4 px-md-0 align-items-stretch">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 custom-height d-flex flex-column">
+                    <img class="img-fluid" src="images/includes.png" alt="includes">
+                    <h4>Antenna system</h4>
+                    <hr class="mt-auto">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 custom-height d-flex flex-column">
+                    <img class="img-fluid" src="images/includes.png" alt="includes">
+                    <h4>RF harness</h4>
+                    <hr class="mt-auto">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 custom-height d-flex flex-column">
+                    <img class="img-fluid" src="images/includes.png" alt="includes">
+                    <h4>Refurbishment kit for flight preparation</h4>
+                    <hr class="mt-auto">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 custom-height d-flex flex-column">
+                    <img class="img-fluid" src="images/includes.png" alt="includes">
+                    <h4>Documentation: user manual, test and build reports</h4>
+                    <hr class="mt-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="numbers-stat">
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="col-12 col-md-6">
+
+                    <img class="img-fluid" src="/images/global-satellite.png" alt="">
+
+
+                </div>
+
+
+
+                <div
+                    class="col-12 col-md-6 d-flex flex-column justify-content-center  align-items-center order-1 order-xl-2">
+                    <div class="stats text-end">
+                        <div class="d-flex flex-column align-items-center align-items-xl-center">
+                            <span class="number">23</span>
+                            <hr class="line"> <!-- Adjust the width using Bootstrap class -->
+                            <span class="length">Missions flown</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container d-flex flex-column flex-md-row justify-content-between align-items-center px-0">
+
+            <!-- Copyright text -->
+            <div
+                class="d-block d-md-none copyright-text d-flex flex-column mt-2 mt-md-0 text-center order-3 order-md-1">
+                <span>Copyright © 2024 ISISPACE GROUP</span>
+            </div>
+
+            <!-- Links section -->
+            <div class="footer-links d-flex flex-row align-items-center order-2 order-md-2">
+                <span class="d-none d-md-block">Copyright © 2024 ISISPACE GROUP</span>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Submit A ticket</a>
+            </div>
+
+            <!-- Social media section -->
+            <div class="social-icons d-flex justify-content-center mt-2 mt-md-0 order-2 order-md-3">
+                <a href="#"><img src="/images/linkedin-logo.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="/images/instagram-logo.svg" alt="Instagram"></a>
+                <a href="#"><img src="/images/facebook-logo.svg" alt="Facebook"></a>
+                <a href="#"><img src="/images/youtube-logo.svg" alt="YouTube"></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+
+
+
+<!-- jQuery (required by Bootstrap and Slick Slider) -->
+<script src="/libs/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+<!-- Slick Slider JS -->
+<script src="/libs/slick/slick.min.js"></script>
+
+<!-- aos JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        // Initialize Slick for larger screens
+        function initSlickForDesktop() {
+            $('.slider-galeria').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                infinite: true,
+                asNavFor: '.slider-galeria-thumbs',
+            });
+            $('.slider-galeria-thumbs').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: false,
+                asNavFor: '.slider-galeria',
+                vertical: true, // Vertical thumbnails on desktop
+                verticalSwiping: true,
+                focusOnSelect: true,
+                infinite: false,
+            });
+        }
+
+        // Initialize Slick for mobile screens
+        function initSlickForMobile() {
+            $('.slider-galeria').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                infinite: true,
+                asNavFor: '.slider-galeria-thumbs',
+            });
+            $('.slider-galeria-thumbs').slick({
+                slidesToShow: 4, // Horizontal thumbnails
+                slidesToScroll: 1,
+                arrows: false,
+                asNavFor: '.slider-galeria',
+                vertical: false, // Horizontal thumbnails on mobile
+                focusOnSelect: true,
+                infinite: false,
+            });
+        }
+
+        // Destroy and reinitialize Slick Slider based on screen size
+        function checkScreenWidth() {
+            var windowWidth = $(window).width();
+
+            if (windowWidth < 992) { // Mobile view
+                if ($('.slider-galeria').hasClass('slick-initialized')) {
+                    $('.slider-galeria').slick('unslick');
+                    $('.slider-galeria-thumbs').slick('unslick');
+                }
+                initSlickForMobile();
+            } else { // Desktop view
+                if ($('.slider-galeria').hasClass('slick-initialized')) {
+                    $('.slider-galeria').slick('unslick');
+                    $('.slider-galeria-thumbs').slick('unslick');
+                }
+                initSlickForDesktop();
+            }
+        }
+
+        // On document ready
+        checkScreenWidth();
+
+        // On window resize
+        $(window).resize(function () {
+            checkScreenWidth();
+        });
+    });
+
+
+</script>
+
+
+
+<script>
+
+    // Select all hotspots
+    const hotspots = document.querySelectorAll('.hotspot');
+
+    hotspots.forEach(hotspot => {
+        hotspot.addEventListener('click', function () {
+            // Check if this hotspot is already active
+            if (!this.classList.contains('active')) {
+                // Remove 'active' class from any other active hotspots
+                hotspots.forEach(hs => hs.classList.remove('active'));
+            }
+
+            // Toggle the 'active' class on the clicked hotspot
+            this.classList.toggle('active');
+
+            // Update the text content of the hotspot's text container
+            const textContainer = this.querySelector('.hotspot-text');
+            textContainer.textContent = this.getAttribute('data-text');
+        });
+    });
+
+
+
+</script>
+
+
+
+
+<!-- leave the position of scroll once reloaded -->
+<script>
+    // Save the scroll position in localStorage before the page unloads
+    window.addEventListener("beforeunload", function () {
+        localStorage.setItem("scrollPosition", window.scrollY);
+    });
+
+    // Restore the scroll position from localStorage when the page loads
+    window.addEventListener("load", function () {
+        const scrollPosition = localStorage.getItem("scrollPosition");
+        if (scrollPosition) {
+            window.scrollTo(0, parseInt(scrollPosition, 10));
+        }
+    });
+</script>
+
+
+
+
+
+</html>

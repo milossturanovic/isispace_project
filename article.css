@@ -1,0 +1,146 @@
+.back-link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.back-link img {
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.back-link a {
+  color: var(--Blue, #1e3c72);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.back-link a:hover img {
+  content: url("images/project-back-arrow-red.svg");
+}
+
+.back-link a:hover {
+  color: #ca202e;
+}
+
+#article {
+  margin-bottom: 96px;
+}
+
+#article h2 {
+  color: var(--Blue, #1e3c72);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 62.4px */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+#article .featured-img {
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+
+#article hr{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#article .post-excerpt {
+  color: var(--Blue, #1e3c72);
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  text-transform: capitalize;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#article .post-meta {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#article .post-meta .date,
+.author {
+  color: var(--Blue, #1e3c72);
+
+  /* Body medium 14 (AA) */
+  font-family: Geologica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+}
+
+#article .post-meta .date-full {
+  color: var(--Blue, #1e3c72);
+
+  /* Body regular 14 (aa) */
+  font-family: Geologica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+#article .post-meta .author-name {
+  color: var(--Blue, #1e3c72);
+
+  /* Body regular 14 (aa) */
+  font-family: Geologica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+#article .category-meta-title {
+  color: var(--Blue, #1e3c72);
+
+  /* Body medium 14 (AA) */
+  font-family: Geologica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#article .category-meta {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to a new line */
+  gap: 8px; /* Adds spacing between items */
+}
+
+#article .category-meta span {
+  border: 1px solid var(--Blue, #1e3c72);
+  padding: 6px 16px 8px 16px;
+  border-radius: 50px;
+  color: var(--Blue, #1e3c72);
+  font-family: Geologica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+#article .share-meta span {
+  color: var(--Blue, #1e3c72);
+  text-align: center;
+  font-family: Geologica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+}

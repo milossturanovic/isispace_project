@@ -1,0 +1,227 @@
+#product-heading {
+  padding: 96px 96px 80px 80px;
+}
+
+#product-heading h2 {
+  color: var(--Blue, #1e3c72);
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96px;
+  text-transform: uppercase;
+}
+
+#product-heading p {
+  margin-top: 48px;
+  width: 50%;
+  padding-left: 35px;
+  color: var(--Blue, #1e3c72);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #product-heading {
+    padding: 96px 12px 20px 12px;
+  }
+
+  #product-heading p {
+    width: 100%;
+    padding-left: 10px;
+    color: var(--Blue, #1e3c72);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #product-heading h2 {
+    color: var(--Blue, #1e3c72);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 120% */
+    text-transform: uppercase;
+  }
+}
+
+/* product category block start */
+
+#product-category img {
+  height: 403px;
+  width: auto;
+}
+
+
+
+#product-category .row{
+  margin-bottom: 96px;
+}
+
+
+#product-category .badge {
+  color: var(--Blue, #1e3c72);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: var(--Light-blue, #f5f8ff);
+
+  position: relative;
+  top: 20%;
+
+  z-index: 5;
+}
+
+#product-category .box-line {
+  border-left: 1px solid #1e3c72;
+  height: 318px;
+  padding-left: 48px;
+}
+
+#product-category h3 {
+  color: var(--Blue, #1e3c72);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+}
+
+#product-category p {
+  color: var(--Blue, #1e3c72);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-top: 24px;
+  width: 69%;
+}
+
+#product-category .button-wrapper-product {
+  margin-top: 128px !important;
+}
+
+#product-category .button-wrapper-product a {
+  color: var(--Blue, #1e3c72);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 53px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+#product-category .button-wrapper-product a:hover {
+  color: #ca202e;
+}
+
+/* Hexagon button with SVG background */
+#product-category .hexagon-button {
+  position: relative;
+  display: grid;
+  width: 254px;
+  height: 54px;
+  background: url("images/download-hexagon-blue") no-repeat center !important;
+  background-size: auto;
+  background-size: contain;
+  transition: all 0.9s ease;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Hexagon button with SVG background */
+#product-category .hexagon-button:hover {
+  position: relative;
+  display: grid;
+  width: 254px;
+  height: 54px;
+  background: url("images/red-hexagon-hero.svg") no-repeat center !important;
+  background-size: auto;
+  background-size: contain;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Adding silver lines */
+#product-category .hexagon-button::before,
+#product-category .hexagon-button::after {
+  content: "";
+  position: absolute;
+  width: 40px; /* Adjust the size of the silver lines */
+  height: 4px; /* Thickness of the silver lines */
+  background-color: #d3d3d3; /* Silver color */
+  z-index: 2; /* Ensure they appear above the SVG background */
+  transition: all 0.3s ease;
+}
+
+#product-category .hexagon-button::before {
+  top: 0px;
+  left: 63%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 37px;
+}
+
+#product-category .hexagon-button::after {
+  bottom: 0px;
+  left: 37%;
+  transform: translateX(-50%);
+  height: 2px;
+}
+
+/* Hover effect */
+#product-category .hexagon-button:hover {
+  color: var(--blue-transparent); /* Change text color on hover */
+}
+
+#product-category .hexagon-button:hover::before {
+  width: 30px; /* Expand the silver line on hover */
+  left: 68%; /* Adjust the left position to move to the right */
+  transform: translateX(-50%) translateX(5px); /* Moves the line slightly to the right */
+}
+
+#product-category .hexagon-button:hover::after {
+  width: 30px; /* Expand the silver line on hover */
+  left: 32%; /* Adjust the left position to move to the left */
+  transform: translateX(-50%) translateX(-5px); /* Moves the line slightly to the left */
+}
+
+@media only screen and (max-width: 1200px) {
+  #product-category .button-wrapper-product {
+    margin-top: 60px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #product-category .box-line {
+    border-left: 0px;
+    padding-left: 10px;
+  }
+
+  #product-category h3 {
+    margin-top: 24px;
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 120% */
+
+  }
+
+
+  #product-category p{
+    width: 100%;
+  }
+}
+
+/* product category block end */

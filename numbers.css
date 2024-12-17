@@ -1,0 +1,167 @@
+
+/* Numbers start */
+
+#numbers {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 773px;
+  padding: 90px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#numbers .row {
+  gap: 72px !important; 
+}
+
+#numbers h2 {
+  color: var(--White, #fff);
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#numbers .statement {
+  color: var(--White, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#numbers .number {
+  color: var(--White, #fff);
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+#numbers a:active,
+#numbers a:hover {
+  outline: 0;
+}
+
+#numbers .link-arrow {
+  display: inline-block;
+  flex: 0 auto;
+  -webkit-box-flex: 0;
+  min-width: 100%;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 8px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid white;
+}
+
+#numbers .link-arrow:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+#numbers .link-arrow::before,
+#numbers .link-arrow::after {
+  content: url("images/arrow-right-white.svg");
+  display: block;
+  font-size: inherit;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(0%, -50%);
+  transition: all 0.5s cubic-bezier(0.25, 0.25, 0.08, 1.08);
+}
+
+#numbers .link-arrow:hover::before {
+  content: url("images/arrow-right-white.svg");
+}
+
+#numbers .link-arrow.font-reg::before,
+#numbers .link-arrow.font-reg::after {
+  font-weight: 300;
+}
+#numbers .link-arrow::before {
+  opacity: 0;
+  transform: translate(-100%, -50%);
+}
+
+#numbers .link-arrow:hover::before {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+#numbers .link-arrow:hover::after {
+  opacity: 0;
+  transform: translate(100%, -50%);
+}
+
+#numbers .tab-content p {
+  color: var(--Blue, #1e3c72);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 112px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  width: 80%;
+}
+
+@media (min-width: 1200px) {
+  #numbers .row .col-3 {
+    width: 280px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #numbers {
+    height: auto;
+  }
+
+  #numbers h2 {
+    margin-bottom: 96px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #numbers {
+    padding: 96px 12px 96px 12px;
+  }
+
+  #numbers h2 {
+    font-size: 50px;
+    font-style: normal;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: 96px;
+  }
+
+  #numbers .row {
+    gap: 48px !important;
+  }
+
+  #numbers .statement {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #numbers .number {
+    font-size: 50px;
+    line-height: 130%; /* 65px */
+    font-weight: 600;
+  }
+}
+
+/* Numbers end */

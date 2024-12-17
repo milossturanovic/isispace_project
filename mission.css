@@ -1,0 +1,113 @@
+#mission .container {
+  padding: 96px;
+}
+
+#mission .container .row h3 {
+  margin-left: 32px;
+  color: var(--Blue, #1e3c72);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+}
+
+#mission .container .row p {
+  margin-left: 32px;
+  width: 352px;
+  color: var(--Blue, #1e3c72);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  margin-top: 16px;
+}
+
+#mission .container .row .block-1 hr {
+  border: none; /* Remove default border */
+  height: 2px; /* Line height */
+  background-color: hsl(217, 24%, 78%); /* Line color */
+  width: 176px; /* Line width */
+}
+
+#mission .container .row .block-2 {
+  margin-top: 80px;
+}
+
+#mission .container .row .block-2 hr {
+  border: none; /* Remove default border */
+  height: 2px; /* Line height */
+  background-color: #bbc5d5; /* Line color */
+  width: 520px; /* Line width */
+}
+
+#mission .container .row .block-3 hr {
+  border: none; /* Remove default border */
+  height: 2px; /* Line height */
+  background-color: #bbc5d5; /* Line color */
+  width: 864px; /* Line width */
+}
+
+#mission .container .row .block-3 {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  #mission .container {
+    padding: 80px 12px 80px;
+  }
+
+  #mission .container .row p {
+    width: 100%;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  #mission .container .row h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #mission .container {
+    padding: 96px 24px;
+  }
+
+  #mission .container .row .block-2 {
+    margin-top: 32px;
+  }
+
+  #mission .container .row .block-3 {
+    margin-top: 32px;
+  }
+
+  #mission hr {
+    display: none;
+  }
+
+  #mission .mobile-line {
+    width: 1px;
+    height: 40px;
+    background: var(--Liniju-sviesesniu, #bbc5d5);
+    left: 16px;
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  #mission .container .row h3 {
+    margin-left: 0px;
+  }
+
+  #mission .container .row p {
+    margin-left: 0px;
+  }
+}
+
+/* Blockquote end */

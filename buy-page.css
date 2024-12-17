@@ -1,0 +1,372 @@
+/* our-projects start */
+body {
+  background-color: #f5f8ff;
+}
+
+#buy-page {
+  padding: 96px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#buy-page h2 {
+  color: var(--Blue, #1e3c72);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+}
+
+#buy-page .link-arrow {
+  display: inline-block;
+  flex: 0 auto;
+  -webkit-box-flex: 0;
+  min-width: 30%;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  color: var(--Blue, #1e3c72);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #1e3c72;
+}
+
+#buy-page .link-arrow:hover {
+  color: var(--Red, #ca202e);
+  border-bottom: 1px solid var(--Red, #ca202e);
+}
+
+#buy-page .link-arrow::before,
+#buy-page .link-arrow::after {
+  content: url("images/arrow-right.svg");
+  display: block;
+  font-family: Inter;
+  font-size: inherit;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(0%, -50%);
+  transition: all 0.5s cubic-bezier(0.25, 0.25, 0.08, 1.08);
+}
+
+#buy-page .link-arrow:hover::before {
+  content: url("images/arrow-right-red.svg");
+}
+
+#buy-page .link-arrow.font-reg::before,
+#buy-page .link-arrow.font-reg::after {
+  font-weight: 300;
+}
+
+#buy-page .link-arrow::before {
+  opacity: 0;
+  transform: translate(-100%, -50%);
+}
+
+#buy-page .link-arrow:hover::before {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+#buy-page .link-arrow:hover::after {
+  opacity: 0;
+  transform: translate(100%, -50%);
+}
+
+#buy-page .custom-margin {
+  margin-top: 48px;
+}
+
+#buy-page .card {
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  padding: 32px 24px;
+}
+
+#buy-page .card a {
+  color: var(--Blue, #1e3c72);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  text-transform: capitalize;
+  margin-top: 8px;
+}
+
+#buy-page .card a:hover {
+  color: var(--Red, #ca202e);
+}
+
+#buy-page .card .dropdown-toggle {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--Blue, #1e3c72);
+  background: var(--White, #fff);
+  color: var(--Blue, #1e3c72);
+  padding: 12px 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+#buy-page .card .dropdown-toggle {
+  width: 100%;
+}
+
+#buy-page .dropdown-menu.show {
+  width: 100%;
+}
+
+#buy-page .dropdown-menu.show a {
+  color: var(--Blue, #1e3c72);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+#buy-page .card-body {
+  padding: 0px;
+}
+
+#buy-page .form-check-input-lg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  border: 2px solid #1e3c72; /* Set border color */
+}
+
+#buy-page .form-check-input-lg:checked {
+  background-color: #1e3c72; /* Set background color for the checkmark */
+  border-color: #1e3c72; /* Maintain the border color when checked */
+}
+
+#buy-page .form-check-input-lg:checked::before {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff; /* Optional: white checkmark contrast */
+  transform: rotate(45deg) scale(1.2); /* Enhance the checkmark appearance */
+}
+
+#buy-page .card .card-img-top {
+  border-radius: 40px !important;
+  height: 270px; /* Custom height */
+  width: 100%; /* Ensure it spans the container width */
+  object-fit: cover; /* Maintains aspect ratio while filling the height */
+  object-position: center; /* Centers the image within the container */
+}
+
+#buy-page #emailForm {
+  margin-top: 64px;
+}
+
+#buy-page #emailForm label {
+  color: var(--Blue, #1e3c72);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+#buy-page #emailForm .form-check .form-check-input {
+  border: 2px solid #1e3c72; /* Set border color */
+}
+
+#buy-page #emailForm .form-check .form-check-input:checked {
+  background-color: #1e3c72; /* Set background color for the checkmark */
+  border-color: #1e3c72; /* Maintain the border color when checked */
+}
+
+#buy-page #emailForm .form-check .form-check-label {
+  color: var(--Blue, #1e3c72);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding-left: 8px;
+}
+
+#buy-page #emailForm .form-check .form-check-label a {
+  color: var(--Blue, #1e3c72);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-decoration: underline;
+}
+
+/* Hexagon button with SVG background */
+#buy-page #emailForm .hexagon-button {
+  position: relative;
+  display: grid;
+  width: 254px;
+  height: 54px;
+  line-height: 42px !important;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #1e3c72;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  background: url("/images/hexagon-contact-form-blue.svg") no-repeat center;
+  background-size: auto;
+  background-size: contain;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-sizing: border-box;
+  border: none;
+  color: var(--Blue, #1e3c72);
+  /* Mygtuku medium 16 (AA) */
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  margin-top: 32px;
+}
+
+#buy-page #emailForm .hexagon-button:hover {
+  color: var(--Red);
+  background: url("/images/hexagon-contact-form-red.svg") no-repeat center;
+  background-size: auto;
+  background-size: contain;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Adding silver lines */
+#buy-page #emailForm .hexagon-button::before,
+#buy-page #emailForm .hexagon-button::after {
+  content: "";
+  position: absolute;
+  width: 40px; /* Adjust the size of the silver lines */
+  height: 4px; /* Thickness of the silver lines */
+  background-color: #f5f8ff; /* Silver color */
+  z-index: 2; /* Ensure they appear above the SVG background */
+  transition: all 0.3s ease;
+}
+
+#buy-page #emailForm .hexagon-button::before {
+  top: 0px;
+  left: 63%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 75px;
+}
+
+#buy-page #emailForm .hexagon-button::after {
+  bottom: 0px;
+  left: 37%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 120px;
+}
+
+#buy-page #emailForm .hexagon-button:hover::before {
+  left: 28%;
+}
+
+#buy-page #emailForm .hexagon-button:hover::after {
+  left: 65%;
+}
+
+@media screen and (max-width: 1200px) {
+  #buy-page {
+    padding: 0px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog-slider-navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #buy-page {
+    padding: 80px 0px;
+  }
+
+  #buy-page h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 120% */
+    text-transform: uppercase;
+  }
+
+  #buy-page .link-arrow {
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+
+  #buy-page .card h5 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+  }
+
+  #buy-page .date {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+
+  #buy-page .link-arrow {
+    margin-bottom: 0px !important;
+  }
+
+  #buy-page .custom-margin {
+    margin-top: 32px;
+  }
+
+  #buy-page .form-check-input-lg {
+    width: 35px;
+    height: 35px;
+  }
+
+  #buy-page .card a {
+    color: var(--Blue, #1e3c72);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+  }
+
+  #buy-page .flex-grow-1 {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  #buy-page .flex-grow-1 a {
+    margin-left: 16px;
+  }
+
+  #buy-page #emailForm {
+    margin-top: 32px;
+  }
+}
+
+/* our-projects end */
+
+/* Our projects end */

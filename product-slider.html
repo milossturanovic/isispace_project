@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISISPACE</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="/libs/aos/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="/libs/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick-theme.css" />
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="product-slider.css">
+
+
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-xl">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/isispace_logo.svg" alt="Logo">
+            </a>
+
+            <!-- Navbar Toggler (for mobile view) -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/toggle-menu.svg" alt="Toggle menu icon"
+                    class="navbar-toggler-icon custom-toggler-icon img-fluid">
+            </button>
+
+            <!-- Navbar Links and Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <!-- Dropdown for Satellites with Submenu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="satellitesDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Satellites
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="satellitesDropdown">
+                            <li><a class="dropdown-item" href="#">Small Satellites</a></li>
+                            <li><a class="dropdown-item" href="#">CubeSats</a></li>
+                            <li><a class="dropdown-item" href="#">Nanosatellites</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="launchersDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Launchers
+
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="launchersDropdown">
+                            <li><a class="dropdown-item" href="#">Heavy Launchers</a></li>
+                            <li><a class="dropdown-item" href="#">Medium Launchers</a></li>
+                            <li><a class="dropdown-item" href="#">Small Launchers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="productsDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#">Solar Panels</a></li>
+                            <li><a class="dropdown-item" href="#">Modular Systems</a></li>
+                            <li><a class="dropdown-item" href="#">Radios</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Remaining Navigation Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Newsroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meet Us</a>
+                    </li>
+                </ul>
+
+                <!-- Search Icon -->
+                <a class="nav-link text-center text-xl-start" href="#">
+                    <img src="images/search.svg" alt="Search" class="custom-search-icon">
+                </a>
+
+                <!-- Button Wrapper -->
+                <div class="button-wrapper">
+                    <a href="#" class="hexagon-button">Inquire</a>
+                </div>
+
+
+
+            </div>
+        </div> <!-- End of Container -->
+    </nav>
+
+
+
+    <section id="products-filter">
+        <div class="container">
+            <h2>NETWORKS OF SMALL SATELLITES FOR EVERY POSSIBLE APPLICATION</h2>
+
+            <div class="row align-items-stretch custom-top-margin">
+                <!-- Links Section -->
+                <div class="col-12 col-md-5 col-lg-4 d-flex flex-column">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" id="customTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="custom-tab1" data-bs-toggle="tab"
+                                data-bs-target="#custom-content1" type="button" role="tab"
+                                aria-controls="custom-content1" aria-selected="true">Earth Observation</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="custom-tab2" data-bs-toggle="tab"
+                                data-bs-target="#custom-content2" type="button" role="tab"
+                                aria-controls="custom-content2" aria-selected="false">IOV/IOD Systems</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="custom-tab3" data-bs-toggle="tab"
+                                data-bs-target="#custom-content3" type="button" role="tab"
+                                aria-controls="custom-content3" aria-selected="false">Air Quality Monitoring</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="custom-tab4" data-bs-toggle="tab"
+                                data-bs-target="#custom-content4" type="button" role="tab"
+                                aria-controls="custom-content4" aria-selected="false">Ship Tracking</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="custom-tab5" data-bs-toggle="tab"
+                                data-bs-target="#custom-content5" type="button" role="tab"
+                                aria-controls="custom-content5" aria-selected="false">Signal Intelligence
+                                (SIGINT)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="custom-tab6" data-bs-toggle="tab"
+                                data-bs-target="#custom-content6" type="button" role="tab"
+                                aria-controls="custom-content6" aria-selected="false">Climate Action</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="custom-tab7" data-bs-toggle="tab"
+                                data-bs-target="#custom-content7" type="button" role="tab"
+                                aria-controls="custom-content7" aria-selected="false">Education</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="custom-tab8" data-bs-toggle="tab"
+                                data-bs-target="#custom-content8" type="button" role="tab"
+                                aria-controls="custom-content8" aria-selected="false">Your solution</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="custom-tab9" data-bs-toggle="tab"
+                                data-bs-target="#custom-content9" type="button" role="tab"
+                                aria-controls="custom-content9" aria-selected="false">IoT</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tab Content Section -->
+                <div class="col-12 col-md-7 col-lg-8">
+                    <!-- Tab content -->
+                    <div class="tab-content h-100" id="customTabContent">
+                        <!-- Tab Panel 1 -->
+                        <div class="tab-pane fade show active h-100" id="custom-content1" role="tabpanel"
+                            aria-labelledby="custom-tab1">
+                            <div class="full-width-bg h-100 d-flex flex-column justify-content-end"
+                                style="background-image: url('images/sattelites.png'); background-size: cover; background-position: center;">
+                                <div class="text-container text-white">
+                                    <h3>Earth Observation</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                        gravida
+                                        tristique mauris. Urna nulla pharetra condimentum pellentesque.</p>
+                                    <a href="#" class="link-arrow font-reg">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Panel 2 -->
+                        <div class="tab-pane fade show  h-100" id="custom-content2" role="tabpane2"
+                            aria-labelledby="custom-tab2">
+                            <div class="full-width-bg h-100 d-flex flex-column justify-content-end"
+                                style="background-image: url('images/satelite.png'); background-size: cover; background-position: center;">
+                                <div class="text-container text-white">
+                                    <h3>Earth Observation</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                        gravida
+                                        tristique mauris. Urna nulla pharetra condimentum pellentesque.</p>
+                                    <a href="#" class="link-arrow font-reg">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Panel 3 -->
+                        <div class="tab-pane fade show  h-100" id="custom-content3" role="tabpane3"
+                            aria-labelledby="custom-tab3">
+                            <div class="full-width-bg h-100 d-flex flex-column justify-content-end"
+                                style="background-image: url('images/scene-with-planets\ 1.png'); background-size: cover; background-position: center;">
+                                <div class="text-container text-white">
+                                    <h3>Earth Observation</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                        gravida
+                                        tristique mauris. Urna nulla pharetra condimentum pellentesque.</p>
+                                    <a href="#" class="link-arrow font-reg">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                         <!-- Tab Panel 4 -->
+                         <div class="tab-pane fade show h-100" id="custom-content4" role="tabpane4"
+                         aria-labelledby="custom-tab4">
+                         <div class="full-width-bg h-100 d-flex flex-column justify-content-end"
+                             style="background-image: url('images/sattelites.png'); background-size: cover; background-position: center;">
+                             <div class="text-container text-white">
+                                 <h3>Earth Observation</h3>
+                                 <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                     gravida
+                                     tristique mauris. Urna nulla pharetra condimentum pellentesque.</p>
+                                 <a href="#" class="link-arrow font-reg">Learn more</a>
+                             </div>
+                         </div>
+                     </div>
+
+                        <!-- Add more panels similarly -->
+
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div id="planning" class="d-block d-md-flex align-items-center justify-content-between">
+                <h3>Are you planning your upcoming mission?</h3>
+                <a href="#" class="link-arrow font-reg">Check here<span class="arrow"></span></a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <section id="about-section-2">
+        <div class="container">
+
+
+            <h2>Projects</h2>
+
+            <div class="row gx-5">
+
+                <div class="col-12 col-lg-6">
+
+                    <img class="img-fluid" src="images/about section.jpg" alt="">
+
+
+                </div>
+
+
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-xl-center px-auto px-md-5">
+
+                    <p>With over 15 years of designing, building, 
+                        testing, launching and operating 
+                        multiple satellites, ISISPACE has 
+                        gained extensive experience in building 
+                        satellites for a vast variety of missions
+                         and customers. Having enabled over 30+ successful
+                          missions with our platforms and turnkey solutions,
+                          our track record speaks for itself. Have a look at our
+                           portfolio and discover the variety of missions we have 
+                           supported.
+                    </p>
+
+
+                    <a href="#" class="link-arrow font-reg">Learn more<span class="arrow"></span></a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container d-flex flex-column flex-md-row justify-content-between align-items-center px-0">
+
+            <!-- Copyright text -->
+            <div
+                class="d-block d-md-none copyright-text d-flex flex-column mt-2 mt-md-0 text-center order-3 order-md-1">
+                <span>Copyright © 2024 ISISPACE GROUP</span>
+            </div>
+
+            <!-- Links section -->
+            <div class="footer-links d-flex flex-row align-items-center order-2 order-md-2">
+                <span class="d-none d-md-block">Copyright © 2024 ISISPACE GROUP</span>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Submit A ticket</a>
+            </div>
+
+            <!-- Social media section -->
+            <div class="social-icons d-flex justify-content-center mt-2 mt-md-0 order-2 order-md-3">
+                <a href="#"><img src="/images/linkedin-logo.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="/images/instagram-logo.svg" alt="Instagram"></a>
+                <a href="#"><img src="/images/facebook-logo.svg" alt="Facebook"></a>
+                <a href="#"><img src="/images/youtube-logo.svg" alt="YouTube"></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+
+
+
+
+<!-- jQuery (required by Bootstrap and Slick Slider) -->
+<script src="/libs/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+<!-- Slick Slider JS -->
+<script src="/libs/slick/slick.min.js"></script>
+
+
+
+
+
+<script>
+    jQuery(document).ready(function ($) {
+        function initializeSlider($sliderContainer) {
+            const $slider = $sliderContainer.find('.slider');
+
+            if (!$slider.hasClass('slick-initialized')) {
+                $slider.slick({
+                    appendArrows: $sliderContainer.find('.slider-navigation'),
+                    appendDots: $sliderContainer.find('.slick-dots-wrapper'),
+                    dots: true,
+                    arrows: true,
+                    prevArrow: $sliderContainer.find('.slick-prev'),
+                    nextArrow: $sliderContainer.find('.slick-next'),
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                });
+
+                $slider.on('afterChange', function (event, slick, currentSlide) {
+                    const $imageContainer = $slider.closest('.tab-pane').find('.image-container');
+
+                    // Show the current slide's hotspot wrapper and hide others
+                    $imageContainer.find('.hotspot-wrapper').hide();
+                    $imageContainer.find(`.hotspot-wrapper[data-slide="${currentSlide}"]`).fadeIn(200);
+                });
+            }
+        }
+
+        function refreshSlider($slider) {
+            if ($slider.hasClass('slick-initialized')) {
+                $slider.slick('setPosition'); // Refresh Slick's calculations
+            }
+        }
+
+        // Initialize slider for the first active tab on page load
+        initializeSlider($('.tab-pane.show.active .slider-container'));
+
+        // Tab switching logic
+        $('#customTab button[data-bs-toggle="tab"]').on('shown.bs.tab', function (event) {
+            const target = $(event.target).attr('data-bs-target');
+            const $targetPane = $(target);
+            const $slider = $targetPane.find('.slider');
+
+            initializeSlider($targetPane.find('.slider-container'));
+
+            // Refresh the slider on tab switch
+            refreshSlider($slider);
+        });
+
+        // Hotspot click functionality with smooth transition
+        $(document).on('click', '.hotspot', function () {
+            const $hotspot = $(this);
+            const $wrapper = $hotspot.closest('.hotspot-wrapper');
+            const $text = $wrapper.find(`.hotspot-text`).filter(function () {
+                return $(this).data('slide') === $hotspot.data('slide');
+            });
+
+            $hotspot.fadeOut(200, function () {
+                $text.css({
+                    zIndex: 2,
+                    opacity: 0,
+                    display: 'block',
+                }).animate({
+                    opacity: 1
+                }, 300);
+            });
+        });
+
+        $(document).on('click', '.hotspot-text', function () {
+            const $text = $(this);
+            const $wrapper = $text.closest('.hotspot-wrapper');
+            const $hotspot = $wrapper.find(`.hotspot`).filter(function () {
+                return $(this).data('slide') === $text.data('slide');
+            });
+
+            $text.animate({
+                opacity: 0
+            }, 200, function () {
+                $text.css('display', 'none');
+                $hotspot.fadeIn(300);
+            });
+        });
+    });
+</script>
+
+<!-- on mobile solutions tab active centered in mobile -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll('#myTab .nav-link');
+
+        // Function to center the active tab
+        function centerActiveTab(tab) {
+            const container = document.getElementById('myTab');
+            const containerWidth = container.offsetWidth;
+            const tabWidth = tab.offsetWidth;
+            const tabOffsetLeft = tab.offsetLeft;
+
+            // Calculate the scroll position to center the active tab
+            const scrollPosition = tabOffsetLeft - (containerWidth / 2) + (tabWidth / 2);
+            container.scrollTo({
+                left: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Center the active tab on page load
+        const activeTab = document.querySelector('#myTab .nav-link.active');
+        if (activeTab) {
+            centerActiveTab(activeTab);
+        }
+
+        // Add click event listeners to all tabs
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Delay the centering to make sure the active class has been updated
+                setTimeout(() => centerActiveTab(tab), 100);
+            });
+        });
+    });
+</script>
+
+<!-- on mobile '#products' tab active centered in mobile -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll('#customTab .nav-link');
+
+        // Function to center the active tab
+        function centerActiveTab(tab) {
+            const container = document.getElementById('customTab');
+            const containerWidth = container.offsetWidth;
+            const tabWidth = tab.offsetWidth;
+            const tabOffsetLeft = tab.parentElement.offsetLeft;
+
+            // Calculate the scroll position to center the active tab
+            const scrollPosition = tabOffsetLeft - (containerWidth / 2) + (tabWidth / 2);
+            container.scrollTo({
+                left: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Center the active tab on page load
+        const activeTab = document.querySelector('#customTab .nav-link.active');
+        if (activeTab) {
+            centerActiveTab(activeTab);
+        }
+
+        // Add click event listeners to all tabs
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Delay the centering to ensure the active class has been updated
+                setTimeout(() => centerActiveTab(tab), 100);
+            });
+        });
+    });
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Select all hotspots
+        const hotspots = document.querySelectorAll('.hotspot');
+
+        hotspots.forEach(hotspot => {
+            // Find the corresponding hotspot text container
+            const slideIndex = hotspot.getAttribute('data-slide');
+            const textContainer = document.querySelector(`.hotspot-text[data-slide="${slideIndex}"][style*="top: ${hotspot.style.top};"][style*="left: ${hotspot.style.left};"]`);
+
+            // Click event for the hotspot
+            hotspot.addEventListener('click', function () {
+                // Hide the hotspot itself
+                hotspot.style.display = 'none';
+
+                // Show the text container
+                textContainer.style.display = 'block';
+            });
+
+            // Click event for the text container
+            textContainer.addEventListener('click', function () {
+                // Hide the text container
+                textContainer.style.display = 'none';
+
+                // Show the hotspot again
+                hotspot.style.display = 'flex'; // Use 'flex' or 'block' depending on your layout needs
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

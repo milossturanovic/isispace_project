@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISISPACE</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="/libs/aos/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="/libs/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick-theme.css" />
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="launch-equipment.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/isispace_logo.svg" alt="Logo">
+            </a>
+
+            <!-- Navbar Toggler (for mobile view) -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/toggle-menu.svg" alt="Toggle menu icon"
+                    class="navbar-toggler-icon custom-toggler-icon img-fluid">
+            </button>
+
+            <!-- Navbar Links and Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <!-- Dropdown for Satellites with Submenu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="satellitesDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Satellites
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="satellitesDropdown">
+                            <li><a class="dropdown-item" href="#">Small Satellites</a></li>
+                            <li><a class="dropdown-item" href="#">CubeSats</a></li>
+                            <li><a class="dropdown-item" href="#">Nanosatellites</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="launchersDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Launchers
+
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="launchersDropdown">
+                            <li><a class="dropdown-item" href="#">Heavy Launchers</a></li>
+                            <li><a class="dropdown-item" href="#">Medium Launchers</a></li>
+                            <li><a class="dropdown-item" href="#">Small Launchers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="productsDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#">Solar Panels</a></li>
+                            <li><a class="dropdown-item" href="#">Modular Systems</a></li>
+                            <li><a class="dropdown-item" href="#">Radios</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Remaining Navigation Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Newsroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meet Us</a>
+                    </li>
+                </ul>
+
+                <!-- Search Icon -->
+                <a class="nav-link text-center text-xl-start" href="#">
+                    <img src="images/search.svg" alt="Search" class="custom-search-icon">
+                </a>
+
+                <!-- Button Wrapper -->
+                <div class="button-wrapper">
+                    <a href="#" class="hexagon-button">Inquire</a>
+                </div>
+            </div>
+        </div> <!-- End of Container -->
+    </nav>
+
+
+
+
+
+    <section id="hero-rockets">
+        <div class="container image-background d-flex flex-column align-items-center"
+            style="background-image: url('http://rekos-boilerplate-theme.local/wp-content/uploads/2024/09/satelite.png'); ">
+            <div class="row h-100">
+                <!-- Column 1 -->
+                <div class="col-12 col-xl-6 d-flex flex-column justify-content-start justify-content-xl-start order-2 order-xl-1 aos-init aos-animate"
+                    data-aos="fade-left" data-aos-easing="linear" data-aos-delay="600">
+                    <h1 class="hero-title">Launch Equipment & Services</h1>
+
+
+
+
+                    <div class="button-wrapper">
+                        <a href="#" class="hexagon-button" target="">
+                            Book your launch </a>
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- Column 2 -->
+                <div
+                    class="col-12 col-xl-6 d-flex flex-column justify-content-start justify-content-xl-center align-items-start align-items-xl-end order-1 order-xl-2">
+                    <div class="stats text-end">
+                        <div class="d-flex flex-column align-items-start align-items-xl-center">
+                            <!-- Display the number or a placeholder if it's empty -->
+                            <span class="number">718</span>
+
+                            <!-- Only show the <hr> if either of the spans has content -->
+                            <hr class="line"> <!-- Adjust the width using Bootstrap class -->
+
+                            <!-- Display the length or a placeholder if it's empty -->
+                            <span class="length">satellites launched</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="row px-4 d-none d-lg-block">
+
+                <div class="col-12">
+
+                    <img class="img-fluid" src="images/rocket-types.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="about-section-2">
+        <div class="container">
+
+
+            <h2>LAUNCH SERVICES</h2>
+
+            <div class="row gx-5">
+
+                <div class="col-12 col-lg-6">
+
+                    <img class="img-fluid" src="images/carrier-rocket-launch-clouds 1.png" alt="">
+
+
+                </div>
+
+
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-xl-center px-auto px-md-5">
+
+                    <p>Lorem ipsum dolor sit amet consectetur.
+                        Aliquam vitae hendrerit consequat non gravida
+                        tristique mauris. Urna nulla pharetra condimentum
+                        pellentesque. Ut et porttitor ut porttitor aenean
+                        risus orci imperdiet viverra. Enim id augue. Habitant
+                        pulvinar tellus ipsum est at egestas ut nunc eros.
+                    </p>
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="d-block d-md-flex align-items-center align-items-center justify-content-between custom-margin">
+
+
+                <h2>our services</h2>
+
+                <a href="#" class="link-arrow font-reg">Contact <span class="arrow"></span></a>
+
+            </div>
+
+
+            <div class="row">
+
+
+                <div
+                    class="col-12 col-xl-6 custom-padding d-flex flex-column justify-content-xl-center order-2 order-xl-1 ">
+
+
+
+                    <div class="d-flex border-silver">
+
+                        <h3 class="stats">01</h3>
+                        <span class="stat-name">Rideshare services</span>
+
+
+                    </div>
+
+                    <div class="d-flex border-silver">
+
+                        <h3 class="stats">02</h3>
+                        <span class="stat-name">Launch management</span>
+
+
+                    </div>
+
+                    <div class="d-flex">
+
+                        <h3 class="stats">03</h3>
+                        <span class="stat-name">Integration services</span>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="col-12 col-xl-6 order-1 order-xl-2">
+                    <img class="img-fluid w-100"
+                        src="/images/spacebased-observatory-deploying-its-observation-instruments-orbit 1.png" alt="">
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <section id="steps">
+
+
+        <div class="container">
+
+
+            <div>
+                <h2>how our service works</h2>
+            </div>
+
+
+            <div class="row">
+
+
+
+
+
+                <div class="col-4 col-md-7 d-flex justify-content-end">
+                    <img class="img-fluid d-none d-md-block" src="/images/steps.svg" alt="">
+
+                    <img class="d-block d-md-none" src="/images/steps-mobile.svg" alt="">
+                </div>
+
+                <div class="col col-md-5 d-flex align-items-center px-0 px-md-4">
+
+
+                    <div class="cd-timeline-block">
+
+
+                        <div class="cd-timeline-content">
+                            <div class="dot"></div>
+                            <div class="content">
+                                <h4>Business-Driven Tech</h4>
+
+                                <p>Lorem ipsum dolor sit amet consectetur. Elementum pellentesque amet amet.</p>
+                            </div>
+
+                        </div> <!-- cd-timeline-content -->
+
+                        <div class="cd-timeline-content">
+                            <div class="dot"></div>
+                            <div class="content">
+                                <h4>Business-Driven Tech</h4>
+
+                                <p>Lorem ipsum dolor sit amet consectetur. Elementum pellentesque amet amet.</p>
+                            </div>
+
+                        </div> <!-- cd-timeline-content -->
+
+                        <div class="cd-timeline-content">
+                            <div class="dot"></div>
+                            <div class="content">
+                                <h4>Business-Driven Tech</h4>
+
+                                <p>Lorem ipsum dolor sit amet consectetur. Elementum pellentesque amet amet.</p>
+                            </div>
+
+                        </div> <!-- cd-timeline-content -->
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <section id="heritage">
+        <div class="container">
+            <h2>Heritage</h2>
+            <hr>
+
+            <!-- Slider description and navigation -->
+            <div class="d-flex align-items-end align-items-md-center justify-content-between custom-margin">
+                <p>Lorem ipsum dolor sit amet consectetur.
+                    Amet quam in tincidunt nulla malesuada eget. Nisl curabitur tempor.
+                </p>
+
+                <!-- Navigation Arrows -->
+                <div class="slider-navigation d-flex align-items-center">
+                    <button class="slick-prev">Prev</button>
+                    <button class="slick-next">Next</button>
+                </div>
+            </div>
+
+            <!-- Slider -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="heritage-slider">
+                        <!-- Slide 1 -->
+                        <div class="heritage-slide">
+                            <div class="heritage-content">
+                                <h5>Mission</h5>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Date of launch</td>
+                                            <td>19 June 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Launch site</td>
+                                            <td>Yasny Launch Base, Russia</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Launch vehicle</td>
+                                            <td>Dnepr</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <img src="images/heritage-1.png" alt="Slide 1">
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="heritage-slide">
+                            <div class="heritage-content">
+                                <h5>Mission</h5>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Date of launch</td>
+                                            <td>19 June 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Launch site</td>
+                                            <td>Yasny Launch Base, Russia</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Launch vehicle</td>
+                                            <td>Dnepr</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <img src="images/heritage-2.png" alt="Slide 2">
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="heritage-slide">
+                            <div class="heritage-content">
+                                <h5>Mission</h5>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Date of launch</td>
+                                            <td>19 June 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Launch site</td>
+                                            <td>Yasny Launch Base, Russia</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Launch vehicle</td>
+                                            <td>Dnepr</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <img src="images/heritage-3.png" alt="Slide 3">
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="heritage-slide">
+                            <div class="heritage-content">
+                                <h5>Mission</h5>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Date of launch</td>
+                                            <td>19 June 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Launch site</td>
+                                            <td>Yasny Launch Base, Russia</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Launch vehicle</td>
+                                            <td>Dnepr</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <img src="images/heritage-1.png" alt="Slide 4">
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="heritage-slide">
+                            <div class="heritage-content">
+                                <h5>Mission</h5>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Date of launch</td>
+                                            <td>19 June 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Launch site</td>
+                                            <td>Yasny Launch Base, Russia</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Launch vehicle</td>
+                                            <td>Dnepr</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <img src="images/beautiful-planets-space.png" alt="Slide 5">
+                        </div>
+
+
+                        <!-- Add more slides as necessary -->
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="#" class="hexagon-button" target="">
+                            Book your launch </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="product-heading">
+
+        <div class="container">
+
+
+            <div class="row">
+
+                <h2>Launch equipment</h2>
+
+
+                <p>The ISISPACE deployers are the world-leading and most flown CubeSat deployers,
+                    developed to accommodate any type of CubeSat or nanosatellite, from 1U up to 16U,
+                    onboard a large variety of launch vehicles. Custom formats and volumes can be
+                    quickly realized. Fully qualified with flight heritage on various different
+                    launch vehicles: PSLV, Soyuz, Dnepr, Antares, Vega, LM-2D, LM-11, Atlas V,
+                    and Falcon 9.</p>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <section id="product-category">
+
+
+        <div class="container">
+
+
+            <div class="row gx-5">
+                <div class="col-12 col-md-6">
+                    <span class="badge">new</span>
+                    <img class="img-fluid mx-auto d-block" src="/images/product-category.jpg" alt="Product Category">
+                </div>
+
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+
+
+                    <div class="box-line d-flex flex-column justify-content-stretch ">
+
+                        <h3>Battery Pack 4S1P</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non gravida
+                            tristique mauris.</p>
+
+                        <div class="button-wrapper-product">
+                            <a href="#" class="hexagon-button">lEARN MORE</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row gx-5">
+
+
+
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+
+
+                    <div class="box-line d-flex flex-column justify-content-stretch ">
+
+                        <h3>Battery Pack 4S1P</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non gravida
+                            tristique mauris.</p>
+
+                        <div class="button-wrapper-product">
+                            <a href="#" class="hexagon-button">lEARN MORE</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <span class="badge">new</span>
+                    <img class="img-fluid mx-auto d-block" src="/images/product-category.jpg" alt="Product Category">
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <section id="our-projects">
+        <div class="container">
+            <div class="d-block d-md-flex align-items-center justify-content-between">
+                <!-- Dynamic Section Title -->
+                <h2>our Projects</h2>
+
+                <!-- Dynamic Link -->
+                <a href="#" class="link-arrow font-reg" target="_self">
+                    All projects<span class="arrow"></span>
+                </a>
+            </div>
+
+            <div class="row d-flex align-items-stretch custom-margin blog-slider-container">
+                <!-- Static blog posts/cards content remains as is -->
+                <div class="col-12 col-md-4 col-xl-4 mb-4 mb-md-0">
+                    <div class="card h-100">
+                        <img decoding="async" class="card-img-top" src="/images/DIDO-1-c-min 1.png"
+                            alt="Card image cap">
+                        <div class="card-body d-flex flex-column">
+                            <a href="" class="card-title">Example 12U/16U project </a>
+                            <div class="mt-auto">
+                                <p class="date">Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit
+                                    consequat non gravida tristique mauris.</p>
+                            </div>
+
+
+
+                            <!-- Dynamic Link -->
+                            <a href="#" class="link-arrow font-reg" target="_self">
+                                Read more<span class="arrow"></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-xl-4 mb-4 mb-md-0">
+                    <div class="card h-100">
+                        <img decoding="async" class="card-img-top" src="/images/blog-1.png"
+                            alt="Card image cap">
+                        <div class="card-body d-flex flex-column">
+                            <a href="" class="card-title">Example 6U project</a>
+                            <div class="mt-auto">
+                                <p class="date">Lorem ipsum dolor sit amet consectetur.
+                                    Aliquam vitae hendrerit consequat non gravida tristique mauris.
+                                    Aliquam vitae hendrerit</p>
+                            </div>
+
+
+                            <!-- Dynamic Link -->
+                            <a href="#" class="link-arrow font-reg" target="_self">
+                                Read more<span class="arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-xl-4 mb-4 mb-md-0">
+                    <div class="card h-100">
+                        <img decoding="async" class="card-img-top" src="/images/DIDO-1-c-min 1.png"
+                            alt="Card image cap">
+                        <div class="card-body d-flex flex-column">
+                            <a href="" class="card-title">Quantum encryption spacecraft closer to launch</a>
+                            <div class="mt-auto">
+                                <p class="date">Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+
+
+                            <!-- Dynamic Link -->
+                            <a href="#" class="link-arrow font-reg" target="_self">
+                                Read more<span class="arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-container d-flex flex-column flex-md-row justify-content-between align-items-center px-0">
+
+            <!-- Copyright text -->
+            <div
+                class="d-block d-md-none copyright-text d-flex flex-column mt-2 mt-md-0 text-center order-3 order-md-1">
+                <span>Copyright © 2024 ISISPACE GROUP</span>
+            </div>
+
+            <!-- Links section -->
+            <div class="footer-links d-flex flex-row align-items-center order-2 order-md-2">
+                <span class="d-none d-md-block">Copyright © 2024 ISISPACE GROUP</span>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Submit A ticket</a>
+            </div>
+
+            <!-- Social media section -->
+            <div class="social-icons d-flex justify-content-center mt-2 mt-md-0 order-2 order-md-3">
+                <a href="#"><img src="/images/linkedin-logo.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="/images/instagram-logo.svg" alt="Instagram"></a>
+                <a href="#"><img src="/images/facebook-logo.svg" alt="Facebook"></a>
+                <a href="#"><img src="/images/youtube-logo.svg" alt="YouTube"></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery (required by Bootstrap and Slick Slider) -->
+<script src="/libs/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+<!-- Slick Slider JS -->
+<script src="/libs/slick/slick.min.js"></script>
+
+<!-- aos JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+
+
+
+<script>
+
+
+
+    jQuery(document).ready(function ($) {
+        $('.heritage-slider').slick({
+            slidesToShow: 3, // Display 3 slides at a time
+            slidesToScroll: 1, // Scroll 1 slide at a time
+            infinite: true, // Enable looping
+            arrows: true, // Enable navigation arrows
+            prevArrow: $('.slider-navigation .slick-prev'),
+            nextArrow: $('.slider-navigation .slick-next'),
+            centerMode: false, // Align slides to the left (no centering)
+            variableWidth: true, // Disable dynamic width adjustments
+            adaptiveHeight: true, // Prevent dynamic height changes
+            responsive: [
+                {
+                    breakpoint: 768, // For screens below 768px
+                    settings: {
+                        slidesToShow: 1, // Show 1 slide
+                        slidesToScroll: 1, // Scroll 1 slide at a time
+                        centerMode: true, // Disable center mode for mobile
+                        variableWidth: true, // Disable dynamic width adjustments
+                    },
+                },
+            ],
+        });
+
+        // Debugging Slick's dimensions
+        console.log('Slick initialized with the following dimensions:');
+        console.log('Track width:', $('.heritage-slider .slick-track').css('width'));
+        console.log('List width:', $('.heritage-slider .slick-list').css('width'));
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

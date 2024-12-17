@@ -1,0 +1,673 @@
+/* Hero Start */
+
+#hero .image-background {
+  background-image: url("images/scene-with-planets\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 844px;
+  border-radius: 16px;
+  padding: 0px 128px 0px 64px;
+  position: relative; /* Make it a positioned element for the pseudo-element */
+  overflow: hidden; /* Ensure the pseudo-element stays within the container */
+}
+
+#hero .image-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color and opacity (0.5) as needed */
+  border-radius: 16px; /* Maintain the same border radius */
+  z-index: 1; /* Ensure the overlay appears above the image */
+}
+
+#hero .image-background * {
+  position: relative;
+  z-index: 2;
+}
+
+#hero h1 {
+  color: var(--White, #fff);
+  /* H3 semibold 50 (AA) */
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 65px */
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+#hero p {
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  margin-bottom: 40px;
+  width: 73%;
+}
+
+#hero .button-wrapper a {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+/* Hexagon button with SVG background */
+#hero .hexagon-button {
+  position: relative;
+  display: grid;
+  width: 254px;
+  height: 54px;
+  line-height: 54px !important;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #1e3c72;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  background: url("images/white-hexagon.svg") no-repeat center;
+  background-size: auto;
+  background-size: contain;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Adding silver lines */
+#hero .hexagon-button::before,
+#hero .hexagon-button::after {
+  content: "";
+  position: absolute;
+  width: 40px; /* Adjust the size of the silver lines */
+  height: 4px; /* Thickness of the silver lines */
+  background-color: #1d1e31; /* Silver color */
+  z-index: 2; /* Ensure they appear above the SVG background */
+  transition: all 0.3s ease;
+}
+
+#hero .hexagon-button::before {
+  top: 0px;
+  left: 63%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 75px;
+}
+
+#hero .hexagon-button::after {
+  bottom: 0px;
+  left: 37%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 120px;
+}
+
+#hero .hexagon-button:hover::before {
+  left: 28%;
+}
+
+#hero .hexagon-button:hover::after {
+  left: 65%;
+}
+
+#hero .stats {
+  padding: 0px;
+  display: inline-block; /* Makes the container fit its content */
+  text-align: right; /* Aligns the content to the right */
+}
+
+#hero .stats .number {
+  color: var(--White, #fff);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 62.4px */
+}
+
+#hero .line {
+  height: 2px;
+  border-top: 2px solid white; /* Set the thickness and color */
+  width: 277px; /* Adjust the width of the line */
+  margin-left: auto; /* Push the line to the right */
+  opacity: 1;
+}
+
+#hero .stats .length {
+  color: var(--White, #fff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1200px) {
+  #hero .stats {
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero h1 {
+    color: var(--White, #fff);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 111.111% */
+    text-transform: uppercase;
+  }
+
+  #hero .image-background {
+    height: 696px;
+    border-radius: 16px;
+    background-position: center;
+    padding: 42px 24px 0px;
+    align-items: flex-start !important;
+  }
+
+  #hero .stats {
+    margin-bottom: 20%;
+  }
+
+  #hero .stats .number {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+  }
+
+  #hero .line {
+    width: 231px;
+  }
+
+  #hero .stats .length {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+  }
+
+  #hero p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  #hero .button-wrapper {
+    justify-content: left !important;
+  }
+}
+
+/* Hero End */
+
+#navigation-section {
+  margin: 96px;
+}
+
+#navigation-section h2 {
+  color: var(--Blue, #1e3c72);
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+  margin-bottom: 56px;
+}
+
+#navigation-section .row .custom-column {
+  background-color: var(--Blue);
+  padding: 24px 16px;
+  border-radius: 20px;
+}
+
+#navigation-section .row .custom-column span {
+  color: var(--White, #fff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  text-transform: capitalize;
+}
+
+#navigation-section .row .custom-column h3 {
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+
+  margin-bottom: 96px !important;
+}
+
+#navigation-section a:active,
+#navigation-section a:hover {
+  outline: 0;
+}
+
+#navigation-section .link-arrow {
+  display: inline-block;
+  flex: 0 auto;
+  -webkit-box-flex: 0;
+  min-width: 100%;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 8px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid white;
+}
+
+#navigation-section .link-arrow:hover {
+  color: var(--Red, #ca202e);
+  border-bottom: 1px solid var(--Red, #ca202e);
+}
+
+#navigation-section .link-arrow::before,
+#navigation-section .link-arrow::after {
+  content: url("images/arrow-right-white.svg");
+  display: block;
+  font-size: inherit;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(0%, -50%);
+  transition: all 0.5s cubic-bezier(0.25, 0.25, 0.08, 1.08);
+}
+
+#navigation-section .link-arrow:hover::before {
+  content: url("images/arrow-right-red.svg");
+}
+
+#navigation-section .link-arrow.font-reg::before,
+#navigation-section .link-arrow.font-reg::after {
+  font-weight: 300;
+}
+#navigation-section .link-arrow::before {
+  opacity: 0;
+  transform: translate(-100%, -50%);
+}
+
+#navigation-section .link-arrow:hover::before {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+#navigation-section .link-arrow:hover::after {
+  opacity: 0;
+  transform: translate(100%, -50%);
+}
+
+/* Adjustments for medium screens */
+@media screen and (max-width: 767px) {
+  #navigation-section {
+    margin: 80px 12px;
+  }
+
+  #navigation-section .row .custom-column span {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+  }
+
+  #navigation-section .row .custom-column h3 {
+    color: var(--White, #fff);
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 120% */
+    text-transform: uppercase;
+    margin-bottom: 64px !important;
+  }
+}
+
+/* LAtest blog start  */
+
+#latest-blog {
+  padding: 48px 96px;
+  background: var(--Light-blue, #f5f8ff);
+}
+
+#latest-blog time {
+  color: var(--Pilko-teksto, #474850);
+  font-family: Geologica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  margin-bottom: 16px;
+}
+
+#latest-blog h3 {
+  color: var(--Blue, #1e3c72);
+
+  /* H5 semibold 36 (AA) */
+  font-family: Geologica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+#latest-blog p {
+  color: var(--Blue, #1e3c72);
+
+  /* Body regular 18 (Aa) */
+  font-family: Geologica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  margin-bottom: 48px;
+}
+
+#latest-blog span {
+  color: var(--Blue, #1e3c72);
+
+  /* H8 medium 20 (Aa) */
+  font-family: Geologica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+}
+
+/* Adjustments for medium screens */
+@media screen and (max-width: 767px) {
+  #latest-blog {
+    padding: 80px 12px;
+  }
+
+  #latest-blog img {
+    margin-bottom: 64px;
+  }
+
+  #latest-blog h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 120% */
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  #latest-blog p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-bottom: 48px;
+  }
+}
+
+/* Latest blog end */
+
+/* News filter start */
+
+#news-filter {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+#news-filter h4 {
+  color: var(--Blue, #1e3c72);
+
+  /* H9 semibold  20 AA */
+  font-family: Geologica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 140% */
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+#news-filter .form-check {
+  margin-bottom: 24px;
+}
+
+#news-filter .form-check-input {
+  width: 20px;
+  height: 20px;
+}
+
+#news-filter .form-check-input:checked {
+  background-color: #1e3c72;
+}
+
+#news-filter .form-check-label {
+  margin-left: 10px;
+  color: rgba(30, 60, 114, 0.6);
+
+  /* Body regular 16 (Aa) */
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+#news-filter .card {
+  border-radius: 30px;
+  background-color: #f5f8ff;
+  border: none;
+}
+
+#news-filter .card-body {
+  padding-top: 0px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#news-filter .card .card-img-top {
+  padding: 24px;
+  border-radius: 16px;
+}
+
+#news-filter .card h5 {
+  color: var(--Blue, #1e3c72);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+#news-filter .date {
+  color: #7b8491;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 768px) {
+  .blog-slider-navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #news-filter #checkboxDropdown {
+    width: 100%;
+    margin-bottom: 32px;
+    background-color: white;
+    color: #1e3c72;
+    border: 0px;
+    color: var(--Blue, #1e3c72);
+    /* H9 semibold  20 AA */
+    font-family: Geologica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+    text-transform: uppercase;
+  }
+
+  #news-filter .dropdown-toggle::after {
+    content: url("images/chevron.svg");
+    background-repeat: no-repeat;
+    border: none !important;
+    padding-left: 12px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transform: rotate(0deg);
+  }
+
+  #news-filter .dropdown-menu {
+    width: 100%;
+  }
+
+  #news-filter .hexagon-button {
+    position: relative;
+    display: grid;
+    width: 254px;
+    height: 54px;
+    line-height: 42px !important;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1e3c72;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    background: url("/images/hexagon-contact-form-blue.svg") no-repeat center;
+    background-size: auto;
+    background-size: contain;
+    transition: all 0.3s ease;
+    z-index: 1;
+    box-sizing: border-box;
+    border: none;
+    color: var(--Blue, #1e3c72);
+    /* Mygtuku medium 16 (AA) */
+    font-family: Geologica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-top: 32px;
+  }
+
+  #news-filter  .hexagon-button:hover {
+    color: var(--Red);
+    background: url("/images/hexagon-contact-form-red.svg") no-repeat center;
+    background-size: auto;
+    background-size: contain;
+    transition: all 0.3s ease;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  
+  /* Adding silver lines */
+  #news-filter .hexagon-button::before,
+  #news-filter  .hexagon-button::after {
+    content: "";
+    position: absolute;
+    width: 40px; /* Adjust the size of the silver lines */
+    height: 4px; /* Thickness of the silver lines */
+    background-color: #f5f8ff; /* Silver color */
+    z-index: 2; /* Ensure they appear above the SVG background */
+    transition: all 0.3s ease;
+  }
+  
+  #news-filter .hexagon-button::before {
+    top: 0px;
+    left: 57%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 75px;
+  }
+  
+  #news-filter  .hexagon-button::after {
+    bottom: 0px;
+    left: 46%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 120px;
+  }
+  
+  #news-filter .hexagon-button:hover::before {
+    left: 45%;
+  }
+  
+  #news-filter  .hexagon-button:hover::after {
+    left: 54%;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  #news-filter {
+    padding: 64px 12px;
+    margin-bottom: 0px;
+  }
+
+  #news-filter h2 {
+    color: var(--Blue, #1e3c72);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 65px */
+    text-transform: uppercase;
+  }
+
+  #news-filter .link-arrow {
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+
+  #news-filter .card h5 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+  }
+
+  #news-filter .date {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+}
+
+/* News end */

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISISPACE</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="/libs/aos/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="/libs/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick-theme.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="project-filter.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-xl">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/isispace_logo.svg" alt="Logo">
+            </a>
+
+            <!-- Navbar Toggler (for mobile view) -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/toggle-menu.svg" alt="Toggle menu icon"
+                    class="navbar-toggler-icon custom-toggler-icon img-fluid">
+            </button>
+
+            <!-- Navbar Links and Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <!-- Dropdown for Satellites with Submenu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="satellitesDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Satellites
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="satellitesDropdown">
+                            <li><a class="dropdown-item" href="#">Small Satellites</a></li>
+                            <li><a class="dropdown-item" href="#">CubeSats</a></li>
+                            <li><a class="dropdown-item" href="#">Nanosatellites</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="launchersDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Launchers
+
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="launchersDropdown">
+                            <li><a class="dropdown-item" href="#">Heavy Launchers</a></li>
+                            <li><a class="dropdown-item" href="#">Medium Launchers</a></li>
+                            <li><a class="dropdown-item" href="#">Small Launchers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="productsDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#">Solar Panels</a></li>
+                            <li><a class="dropdown-item" href="#">Modular Systems</a></li>
+                            <li><a class="dropdown-item" href="#">Radios</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Remaining Navigation Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Newsroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meet Us</a>
+                    </li>
+                </ul>
+
+                <!-- Search Icon -->
+                <a class="nav-link text-center text-xl-start" href="#">
+                    <img src="images/search.svg" alt="Search" class="custom-search-icon">
+                </a>
+
+                <!-- Button Wrapper -->
+                <div class="button-wrapper">
+                    <a href="#" class="hexagon-button">Inquire</a>
+                </div>
+
+
+
+            </div>
+        </div> <!-- End of Container -->
+    </nav>
+
+
+
+    <section id="projects-filter">
+
+        <div class="container">
+            <h1>Projects</h1>
+
+
+            <ul class="nav nav-tabs" id="customTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="custom-tab1" data-bs-toggle="tab"
+                        data-bs-target="#custom-content1" type="button" role="tab" aria-controls="custom-content1"
+                        aria-selected="true">Security and Defense
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab2" data-bs-toggle="tab" data-bs-target="#custom-content2"
+                        type="button" role="tab" aria-controls="custom-content2" aria-selected="false">Remote sensing
+                        and climate
+                        action</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab3" data-bs-toggle="tab" data-bs-target="#custom-content3"
+                        type="button" role="tab" aria-controls="custom-content3" aria-selected="false">Earth
+                        Observation</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab4" data-bs-toggle="tab" data-bs-target="#custom-content4"
+                        type="button" role="tab" aria-controls="custom-content4" aria-selected="false">Air Quality
+                        Monitoring
+                    </button>
+                </li>
+
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab5" data-bs-toggle="tab" data-bs-target="#custom-content5"
+                        type="button" role="tab" aria-controls="custom-content5" aria-selected="false">Ship Tracking
+
+                    </button>
+                </li>
+
+
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab6" data-bs-toggle="tab" data-bs-target="#custom-content6"
+                        type="button" role="tab" aria-controls="custom-content6" aria-selected="false">Climate Action
+
+
+                    </button>
+                </li>
+
+
+
+
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab7" data-bs-toggle="tab" data-bs-target="#custom-content7"
+                        type="button" role="tab" aria-controls="custom-content7" aria-selected="false">In-orbit
+                        Demonstration
+
+
+                    </button>
+                </li>
+
+
+
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab8" data-bs-toggle="tab" data-bs-target="#custom-content8"
+                        type="button" role="tab" aria-controls="custom-content8" aria-selected="false">Your solution
+
+
+
+                    </button>
+                </li>
+
+
+
+
+
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab9" data-bs-toggle="tab" data-bs-target="#custom-content9"
+                        type="button" role="tab" aria-controls="custom-content9" aria-selected="false">Signal
+                        Intelligence (SIGINT)
+
+
+
+                    </button>
+                </li>
+
+
+
+
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab10" data-bs-toggle="tab" data-bs-target="#custom-content10"
+                        type="button" role="tab" aria-controls="custom-content10" aria-selected="false">Launch Equipment
+
+
+
+                    </button>
+                </li>
+
+
+
+
+
+
+
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab11" data-bs-toggle="tab" data-bs-target="#custom-content11"
+                        type="button" role="tab" aria-controls="custom-content11" aria-selected="false">R&D
+
+
+
+                    </button>
+                </li>
+
+
+
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab12" data-bs-toggle="tab" data-bs-target="#custom-content11"
+                        type="button" role="tab" aria-controls="custom-content12" aria-selected="false">Launch Missions
+
+
+
+                    </button>
+                </li>
+
+
+
+
+
+            </ul>
+
+
+
+
+
+            <!-- Tab content -->
+            <div class="tab-content" id="customTabfilterContent">
+                <div class="tab-pane fade show active" id="custom-content1" role="tabpanel"
+                    aria-labelledby="custom-tab1">
+
+
+
+                    <div class="row d-flex align-items-stretch blog-slider-container">
+
+
+                        <div class="col-12 col-md-4 col-xl-4 custom-margin">
+                            <div class="card h-100">
+                                <img decoding="async" class="card-img-top" src="images/DIDO-1-c-min 1.png"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column">
+                                    <a href="" class="card-title">
+                                        <h3>Example 12U/16U project</h3>
+                                    </a>
+
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur. Aliquam vitae
+                                        hendrerit consequat non gravida tristique mauris.</p>
+
+
+                                    <a href="#" class="link-arrow">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-xl-4 custom-margin">
+                            <div class="card h-100">
+                                <img decoding="async" class="card-img-top" src="images/DIDO-1-c-min 1.png"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column">
+                                    <a href="" class="card-title">
+                                        <h3>Example 12U/16U project</h3>
+                                    </a>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur. Aliquam vitae
+                                        hendrerit consequat non gravida tristique mauris.</p>
+
+                                    <a href="#" class="link-arrow">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-xl-4 custom-margin">
+                            <div class="card h-100">
+                                <img decoding="async" class="card-img-top" src="images/DIDO-1-c-min 1.png"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column">
+
+                                    <a href="" class="card-title">
+                                        <h3>Example 12U/16U project</h3>
+                                    </a>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur. Aliquam vitae
+                                        hendrerit consequat non gravida tristique mauris.</p>
+
+
+                                    <a href="#" class="link-arrow">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="tab-pane fade" id="custom-content2" role="tabpanel" aria-labelledby="custom-tab2">
+                    <div class="row d-flex align-items-center bg-white">
+                        <div class="col-12 col-xl-6  order-2 order-md-1">
+                            <div class="slider-container">
+                                <div class="slider">
+                                    <!-- Slide 1 -->
+                                    <div class="slide-content">
+                                        <h5>Project</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat
+                                            non
+                                            gravida tristique mauris. Urna nulla pharetra condimentum pellentesque.
+                                            Ut
+                                            et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                            augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+                                        <a href="#" class="link-arrow font-reg">Learn more <span
+                                                class="arrow"></span></a>
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="slide-content">
+                                        <h5>Project</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat
+                                            non
+                                            gravida tristique mauris. Urna nulla pharetra condimentum pellentesque.
+                                            Ut
+                                            et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                            augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+                                        <a href="#" class="link-arrow font-reg">Learn more <span
+                                                class="arrow"></span></a>
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="slide-content">
+                                        <h5>Project</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat
+                                            non
+                                            gravida tristique mauris. Urna nulla pharetra condimentum pellentesque.
+                                            Ut
+                                            et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                            augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+                                        <a href="#" class="link-arrow font-reg">Learn more <span
+                                                class="arrow"></span></a>
+                                    </div>
+                                </div>
+                                <!-- Custom navigation arrows and dots -->
+                                <div class="slider-navigation">
+                                    <button class="slick-prev"></button>
+                                    <div class="slick-dots-wrapper"></div>
+                                    <button class="slick-next"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-6  order-1 order-md-2">
+                            <div class="image-container" style="position: relative;">
+                                <img class="cube-img img-fluid" src="/images/isis-cube.svg" alt="">
+                                <!-- Hotspot elements -->
+                                <div class="hotspot position-1" data-text="Peak Power Generation up to 20W">
+                                    <div class="hotspot-text"></div>
+                                </div>
+                                <div class="hotspot position-2" data-text="High-Efficiency Solar Panel">
+                                    <div class="hotspot-text"></div>
+                                </div>
+                                <div class="hotspot position-3" data-text="Advanced Battery Storage up to 30W">
+                                    <div class="hotspot-text"></div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="custom-content3" role="tabpanel" aria-labelledby="custom-tab3">
+                    <p>This is the content for Tab Three.</p>
+                </div>
+                <div class="tab-pane fade" id="custom-content4" role="tabpanel" aria-labelledby="custom-tab4">
+                    <p>This is the content for Tab Four.</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container d-flex flex-column flex-md-row justify-content-between align-items-center px-0">
+
+            <!-- Copyright text -->
+            <div
+                class="d-block d-md-none copyright-text d-flex flex-column mt-2 mt-md-0 text-center order-3 order-md-1">
+                <span>Copyright © 2024 ISISPACE GROUP</span>
+            </div>
+
+            <!-- Links section -->
+            <div class="footer-links d-flex flex-row align-items-center order-2 order-md-2">
+                <span class="d-none d-md-block">Copyright © 2024 ISISPACE GROUP</span>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Submit A ticket</a>
+            </div>
+
+            <!-- Social media section -->
+            <div class="social-icons d-flex justify-content-center mt-2 mt-md-0 order-2 order-md-3">
+                <a href="#"><img src="/images/linkedin-logo.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="/images/instagram-logo.svg" alt="Instagram"></a>
+                <a href="#"><img src="/images/facebook-logo.svg" alt="Facebook"></a>
+                <a href="#"><img src="/images/youtube-logo.svg" alt="YouTube"></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+
+
+
+
+<!-- jQuery (required by Bootstrap and Slick Slider) -->
+<script src="/libs/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+<!-- Slick Slider JS -->
+<script src="/libs/slick/slick.min.js"></script>
+
+
+
+<!-- leave the position of scroll once reloaded -->
+<script>
+    // Save the scroll position in localStorage before the page unloads
+    window.addEventListener("beforeunload", function () {
+        localStorage.setItem("scrollPosition", window.scrollY);
+    });
+
+    // Restore the scroll position from localStorage when the page loads
+    window.addEventListener("load", function () {
+        const scrollPosition = localStorage.getItem("scrollPosition");
+        if (scrollPosition) {
+            window.scrollTo(0, parseInt(scrollPosition, 10));
+        }
+    });
+</script>
+
+
+
+
+
+<!-- on mobile '#projects-filter ' tab active centered in mobile -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll('#customTab .nav-link');
+
+        // Function to center the active tab
+        function centerActiveTab(tab) {
+            const container = document.getElementById('customTab');
+            const containerWidth = container.offsetWidth;
+            const tabWidth = tab.offsetWidth;
+            const tabOffsetLeft = tab.parentElement.offsetLeft;
+
+            // Calculate the scroll position to center the active tab
+            const scrollPosition = tabOffsetLeft - (containerWidth / 2) + (tabWidth / 2);
+            container.scrollTo({
+                left: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Center the active tab on page load
+        const activeTab = document.querySelector('#customTab .nav-link.active');
+        if (activeTab) {
+            centerActiveTab(activeTab);
+        }
+
+        // Add click event listeners to all tabs
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Delay the centering to ensure the active class has been updated
+                setTimeout(() => centerActiveTab(tab), 100);
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+</html>

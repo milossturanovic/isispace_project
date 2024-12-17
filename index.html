@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISISPACE</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="/libs/aos/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="/libs/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/libs/slick/slick-theme.css" />
+
+
+
+
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-xl">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/isispace_logo.svg" alt="Logo">
+            </a>
+    
+            <!-- Navbar Toggler (for mobile view) -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/toggle-menu.svg" alt="Toggle menu icon"
+                    class="navbar-toggler-icon custom-toggler-icon img-fluid">
+            </button>
+    
+            <!-- Navbar Links and Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <!-- Dropdown for Satellites with Submenu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="satellitesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Satellites
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="satellitesDropdown">
+                            <li><a class="dropdown-item" href="#">Small Satellites</a></li>
+                            <li><a class="dropdown-item" href="#">CubeSats</a></li>
+                            <li><a class="dropdown-item" href="#">Nanosatellites</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="launchersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Launchers
+                        
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="launchersDropdown">
+                            <li><a class="dropdown-item" href="#">Heavy Launchers</a></li>
+                            <li><a class="dropdown-item" href="#">Medium Launchers</a></li>
+                            <li><a class="dropdown-item" href="#">Small Launchers</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#">Solar Panels</a></li>
+                            <li><a class="dropdown-item" href="#">Modular Systems</a></li>
+                            <li><a class="dropdown-item" href="#">Radios</a></li>
+                        </ul>
+                    </li>
+    
+                    <!-- Remaining Navigation Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Newsroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meet Us</a>
+                    </li>
+                </ul>
+    
+                <!-- Search Icon -->
+                <a class="nav-link text-center text-xl-start" href="#">
+                    <img src="images/search.svg" alt="Search" class="custom-search-icon">
+                </a>
+    
+                <!-- Button Wrapper -->
+                <div class="button-wrapper">
+                    <a href="#" class="hexagon-button">Inquire</a>
+                </div>
+
+
+                
+            </div>
+        </div> <!-- End of Container -->
+    </nav>
+    
+
+
+    <section id="hero">
+        <div class="container image-background d-flex align-items-center">
+            <div class="row ">
+                <!-- Column 1 -->
+                <div class="col-12 col-xl-6 d-flex flex-column justify-content-center order-2 order-xl-1">
+                    <h1>Lorem ipsum dolor sit consectetur Gravida suscipit</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur. Integer lectus tincidunt eu ut. Ipsum lobortis sapien
+                        viverrauam
+                        duis tortor. Quam adipiscing.</p>
+                    <div class="button-wrapper">
+                        <a href="#" class="hexagon-button">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div
+                    class="col-12 col-xl-6 d-flex flex-column justify-content-start justify-content-xl-center  align-items-start align-items-xl-end order-1 order-xl-2">
+                    <div class="stats text-end">
+                        <div class="d-flex flex-column align-items-start align-items-xl-center">
+                            <span class="number">23 billion</span>
+                            <hr class="line"> <!-- Adjust the width using Bootstrap class -->
+                            <span class="length">kilometers flown</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="solutions">
+
+
+        <div class="container">
+
+            <h2>Solutions</h2>
+            <!-- Nav pills (Tabs) -->
+
+            <nav class="nav nav-pills" id="myTab" role="tablist">
+                <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab"
+                    aria-controls="tab1" aria-selected="true">Mission Solutions & Platforms</a>
+                <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+                    aria-selected="false">Launch Solutions</a>
+
+
+            </nav>
+
+            <!-- Tab content -->
+            <div class="tab-content mt-3" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+
+
+                    <div class="row">
+
+                        <div class="col-12 col-xl-6">
+
+
+                            <h3>Lorem ipsum dolor consectetur Mollis orci risus</h3>
+
+                            <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non gravida
+                                tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut et porttitor ut
+                                porttitor aenean risus orci imperdiet viverra. Enim id augue. Habitant pulvinar tellus
+                                ipsum est at egestas ut nunc eros.</p>
+
+                            <a href="#" class="link-arrow font-reg">Learn more</a>
+
+
+
+                        </div>
+
+
+                        <div class="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-end img-margin">
+
+                            <img class="img-fluid" src="/images/surgeon.png" alt="">
+
+
+
+                            
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                    <div class="row">
+
+                        <div class="col-12 col-xl-6">
+
+
+                            <h3>Lorem ipsum dolor consectetur Mollis orci risus</h3>
+
+                            <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non gravida
+                                tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut et porttitor ut
+                                porttitor aenean risus orci imperdiet viverra. Enim id augue. Habitant pulvinar tellus
+                                ipsum est at egestas ut nunc eros.</p>
+
+                            <a href="#" class="link-arrow font-reg">Learn more</a>
+
+
+
+                        </div>
+
+
+                        <div class="col-12 col-xl-6 d-flex justify-content-end img-margin">
+
+                            <img src="/images/surgeon.png" alt="">
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <section id="numbers">
+
+
+
+
+        <div class="container h-100 d-flex flex-column justify-content-between">
+            <h2>Our Numbers</h2>
+
+            <!-- Wrapper div to handle negative margins of the Bootstrap row -->
+            <div class="content-wrapper h-100 w-100 d-flex flex-column justify-content-end">
+                <div class="row d-flex align-items-end justify-content-end">
+                    <div class="col-12 col-xl-3 d-flex flex-column justify-content-end ">
+                        <span class="statement">Of Missions Enabled</span>
+                        <span class="number">50+</span>
+                        <a href="#" class="link-arrow font-reg">Learn more</a>
+                    </div>
+
+                    <div class="col-12 col-xl-3 d-flex flex-column justify-content-end">
+                        <span class="statement">Another Metric</span>
+                        <span class="number">20+</span>
+                        <a href="#" class="link-arrow font-reg">Learn more</a>
+                    </div>
+
+                    <div class="col-12 col-xl-3 d-flex flex-column justify-content-end ">
+                        <span class="statement">More Numbers</span>
+                        <span class="number">10+</span>
+                        <a href="#" class="link-arrow font-reg">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="products">
+
+        <div class="container">
+            <h2>Our products</h2>
+
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="customTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="custom-tab1" data-bs-toggle="tab"
+                        data-bs-target="#custom-content1" type="button" role="tab" aria-controls="custom-content1"
+                        aria-selected="true">Solar Panels</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab2" data-bs-toggle="tab" data-bs-target="#custom-content2"
+                        type="button" role="tab" aria-controls="custom-content2" aria-selected="false">Modular Power
+                        Systems</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab3" data-bs-toggle="tab" data-bs-target="#custom-content3"
+                        type="button" role="tab" aria-controls="custom-content3" aria-selected="false">Radios</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="custom-tab4" data-bs-toggle="tab" data-bs-target="#custom-content4"
+                        type="button" role="tab" aria-controls="custom-content4" aria-selected="false">Antennas</button>
+                </li>
+            </ul>
+
+
+
+
+
+            <!-- Tab content -->
+            <div class="tab-content" id="customTabContent">
+                <div class="tab-pane fade show active" id="custom-content1" role="tabpanel"
+                    aria-labelledby="custom-tab1">
+
+
+                    <div class="row d-flex align-items-center bg-white">
+                        <div class="col-12 col-xl-6  order-2 order-md-1">
+                            <div class="slider-container">
+                                <div class="slider">
+                                    <!-- Slide 1 -->
+                                    <div class="slide-content">
+                                        <h5>Project</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                            gravida tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut
+                                            et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                            augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+                                        <a href="#" class="link-arrow font-reg">Learn more <span
+                                                class="arrow"></span></a>
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="slide-content">
+                                        <h5>Project</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                            gravida tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut
+                                            et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                            augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+                                        <a href="#" class="link-arrow font-reg">Learn more <span
+                                                class="arrow"></span></a>
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="slide-content">
+                                        <h5>Project</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                            gravida tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut
+                                            et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                            augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+                                        <a href="#" class="link-arrow font-reg">Learn more <span
+                                                class="arrow"></span></a>
+                                    </div>
+                                </div>
+                                <!-- Custom navigation arrows and dots -->
+                                <div class="slider-navigation">
+                                    <button class="slick-prev"></button>
+                                    <div class="slick-dots-wrapper"></div>
+                                    <button class="slick-next"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-6  order-1 order-md-2">
+                            <div class="image-container" style="position: relative;">
+                                <img class="cube-img img-fluid" src="/images/isis-cube.svg" alt="">
+                                <!-- Hotspot elements -->
+                                <div class="hotspot position-1" data-text="Peak Power Generation up to 20W">
+                                    <div class="hotspot-text"></div>
+                                </div>
+                                <div class="hotspot position-2" data-text="High-Efficiency Solar Panel">
+                                    <div class="hotspot-text"></div>
+                                </div>
+                                <div class="hotspot position-3" data-text="Advanced Battery Storage up to 30W">
+                                    <div class="hotspot-text"></div>
+                                </div>
+                               
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+                <div class="tab-pane fade" id="custom-content2" role="tabpanel" aria-labelledby="custom-tab2">
+                    <div class="row d-flex align-items-center bg-white">
+                        <div class="col-12 col-xl-6  order-2 order-md-1">
+                            <div class="slider-container">
+                                <div class="slider">
+                                    <!-- Slide 1 -->
+                                    <div class="slide-content">
+                                        <h5>Project</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                            gravida tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut
+                                            et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                            augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+                                        <a href="#" class="link-arrow font-reg">Learn more <span
+                                                class="arrow"></span></a>
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="slide-content">
+                                        <h5>Project</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                            gravida tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut
+                                            et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                            augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+                                        <a href="#" class="link-arrow font-reg">Learn more <span
+                                                class="arrow"></span></a>
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="slide-content">
+                                        <h5>Project</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                            gravida tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut
+                                            et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                            augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+                                        <a href="#" class="link-arrow font-reg">Learn more <span
+                                                class="arrow"></span></a>
+                                    </div>
+                                </div>
+                                <!-- Custom navigation arrows and dots -->
+                                <div class="slider-navigation">
+                                    <button class="slick-prev"></button>
+                                    <div class="slick-dots-wrapper"></div>
+                                    <button class="slick-next"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-6  order-1 order-md-2">
+                            <div class="image-container" style="position: relative;">
+                                <img class="cube-img img-fluid" src="/images/isis-cube.svg" alt="">
+                                <!-- Hotspot elements -->
+                                <div class="hotspot position-1" data-text="Peak Power Generation up to 20W">
+                                    <div class="hotspot-text"></div>
+                                </div>
+                                <div class="hotspot position-2" data-text="High-Efficiency Solar Panel">
+                                    <div class="hotspot-text"></div>
+                                </div>
+                                <div class="hotspot position-3" data-text="Advanced Battery Storage up to 30W">
+                                    <div class="hotspot-text"></div>
+                                </div>
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="custom-content3" role="tabpanel" aria-labelledby="custom-tab3">
+                    <p>This is the content for Tab Three.</p>
+                </div>
+                <div class="tab-pane fade" id="custom-content4" role="tabpanel" aria-labelledby="custom-tab4">
+                    <p>This is the content for Tab Four.</p>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="d-block d-md-flex align-items-center align-items-center justify-content-between custom-margin">
+
+
+                <h2>About Us</h2>
+
+                <a href="#" class="link-arrow font-reg">More <span class="arrow"></span></a>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-12 col-xl-6">
+                    <img class="img-fluid" src="/images/building.png" alt="">
+                </div>
+
+
+                <div class="col-12 col-xl-6 custom-padding">
+
+                    <p>Lorem ipsum dolor sit amet consectetur.
+                        Aliquam vitae hendrerit consequat non gravida tristique mauris. Urna nulla pharetra
+                        condimentum pellentesque.
+                        Lorem ipsum dolor sit amet consectetur.
+                        Aliquam vitae hendrerit consequat non gravida tristique mauris. Urna nulla pharetra
+                        condimentum pellentesque.
+                    </p>
+
+
+                    <div class="d-flex border-silver">
+
+                        <h3 class="stats">200</h3>
+                        <span class="stat-name">Projects Completed</span>
+
+
+                    </div>
+
+                    <div class="d-flex border-silver">
+
+                        <h3 class="stats">500</h3>
+                        <span class="stat-name">Happy Customers</span>
+
+
+                    </div>
+
+                    <div class="d-flex">
+
+                        <h3 class="stats">800</h3>
+                        <span class="stat-name">Projects Completed</span>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <section id="projects" style="background-image: url('images/projects.png');">
+
+
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="col-12 col-xl-7 px-0 px-md">
+
+                    <h2>Projects</h2>
+
+                </div>
+
+
+                <div class="col-12 col-xl-5 px-0 px-md">
+
+
+                    <div class="new-slider-container">
+                        <div class="slider">
+                            <!-- Slide 1 -->
+                            <div class="slide-content">
+
+
+                                <h5>Project</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                    gravida tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut
+                                    et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                    augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+
+
+                                <div class="d-flex align-content-center justify-content-between statistic">
+
+
+                                    <span class="stat">17</span>
+
+                                    <span class="stat-name">Lorem<br>ipsum</span>
+
+                                    <span class="stat">88</span>
+
+                                    <span class="stat-name">Lorem<br>ipsum</span>
+
+
+                                    <span class="stat">20</span>
+
+                                    <span class="stat-name">Lorem<br>ipsum</span>
+
+                                </div>
+
+
+
+                                <a href="#" class="link-arrow font-reg">Learn more <span class="arrow"></span></a>
+                            </div>
+
+
+
+                            <!-- Slide 2 -->
+                            <div class="slide-content">
+
+
+                                <h5>Project</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                    gravida tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut
+                                    et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                    augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+
+
+                                <div class="d-flex align-content-center justify-content-between statistic">
+
+
+                                    <span class="stat">17</span>
+
+                                    <span class="stat-name">Lorem<br>ipsum</span>
+
+                                    <span class="stat">88</span>
+
+                                    <span class="stat-name">Lorem<br>ipsum</span>
+
+
+                                    <span class="stat">20</span>
+
+                                    <span class="stat-name">Lorem<br>ipsum</span>
+
+                                </div>
+
+
+
+                                <a href="#" class="link-arrow font-reg">Learn more <span class="arrow"></span></a>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="slide-content">
+
+
+                                <h5>Project</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur. Aliquam vitae hendrerit consequat non
+                                    gravida tristique mauris. Urna nulla pharetra condimentum pellentesque. Ut
+                                    et porttitor ut porttitor aenean risus orci imperdiet viverra. Enim id
+                                    augue. Habitant pulvinar tellus ipsum est at egestas ut nunc eros.</p>
+
+
+                                <div class="d-flex align-content-center justify-content-between statistic">
+
+
+                                    <span class="stat">17</span>
+
+                                    <span class="stat-name">Lorem<br>ipsum</span>
+
+                                    <span class="stat">88</span>
+
+                                    <span class="stat-name">Lorem<br>ipsum</span>
+
+
+                                    <span class="stat">20</span>
+
+                                    <span class="stat-name">Lorem<br>ipsum</span>
+
+                                </div>
+
+
+
+                                <a href="#" class="link-arrow font-reg">Learn more <span class="arrow"></span></a>
+                            </div>
+                            <!-- Add more slides as needed -->
+                        </div>
+
+                        <!-- Custom navigation arrows and dots -->
+                        <div class="new-slider-navigation">
+                            <button class="new-slick-prev"></button>
+                            <div class="new-slick-dots-wrapper"></div>
+                            <button class="new-slick-next"></button>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+    </section>
+
+
+
+    <section id="clients">
+
+
+        <div class="container">
+
+            <h5>Trusted by +300 Partners and Customer</h5>
+
+            <div class="logos">
+                <div class="logo_items">
+                    <img src="images/nasa-logo.svg" alt="NASA Logo">
+                    <img src="images/logowik-logo.svg" alt="ESA Logo">
+                    <img src="images/nasa-logo.svg" alt="NASA Logo">
+                    <img src="images/logowik-logo.svg" alt="ESA Logo">
+                    <img src="images/nasa-logo.svg" alt="NASA Logo">
+                    <img src="images/logowik-logo.svg" alt="ESA Logo">
+                    <img src="images/nasa-logo.svg" alt="NASA Logo">
+                    <img src="images/logowik-logo.svg" alt="ESA Logo">
+
+                </div>
+                <div class="logo_items">
+                    <img src="images/nasa-logo.svg" alt="NASA Logo">
+                    <img src="images/logowik-logo.svg" alt="ESA Logo">
+                    <img src="images/nasa-logo.svg" alt="NASA Logo">
+                    <img src="images/logowik-logo.svg" alt="ESA Logo">
+                    <img src="images/nasa-logo.svg" alt="NASA Logo">
+                    <img src="images/logowik-logo.svg" alt="ESA Logo">
+                    <img src="images/nasa-logo.svg" alt="NASA Logo">
+                    <img src="images/logowik-logo.svg" alt="ESA Logo">
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <section id="news">
+        <div class="container">
+            <div class="d-block d-md-flex align-items-center justify-content-between">
+                <h2>News & Events</h2>
+                <a href="#" class="link-arrow font-reg">View All News and Events <span class="arrow"></span></a>
+            </div>
+
+            <div class="row d-flex align-items-stretch custom-margin blog-slider-container">
+                <div class="col-12 col-xl-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="/images/blog-1.png" alt="Card image cap">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">ESA selects Dutch satellite system TANGO for emission monitoring</h5>
+                            <div class="mt-auto">
+                                <span class="date">February 21, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="/images/blog-2.png" alt="Card image cap">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">ESA Industry Days 2024</h5>
+                            <div class="mt-auto">
+                                <span class="date">February 21, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="/images/blog-3.png" alt="Card image cap">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Quantum encryption spacecraft closer to launch</h5>
+                            <div class="mt-auto">
+                                <span class="date">February 21, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom navigation arrows and dots -->
+            <div class="blog-slider-navigation">
+                <button class="blog-nav-prev"></button> <!-- Updated class for prev arrow -->
+                <div class="blog-nav-dots-wrapper"></div> <!-- Updated class for dots wrapper -->
+                <button class="blog-nav-next"></button> <!-- Updated class for next arrow -->
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-container d-flex flex-column flex-md-row justify-content-between align-items-center px-0">
+
+            <!-- Copyright text -->
+            <div
+                class="d-block d-md-none copyright-text d-flex flex-column mt-2 mt-md-0 text-center order-3 order-md-1">
+                <span>Copyright © 2024 ISISPACE GROUP</span>
+            </div>
+
+            <!-- Links section -->
+            <div class="footer-links d-flex flex-row align-items-center order-2 order-md-2">
+                <span class="d-none d-md-block">Copyright © 2024 ISISPACE GROUP</span>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Submit A ticket</a>
+            </div>
+
+            <!-- Social media section -->
+            <div class="social-icons d-flex justify-content-center mt-2 mt-md-0 order-2 order-md-3">
+                <a href="#"><img src="/images/linkedin-logo.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="/images/instagram-logo.svg" alt="Instagram"></a>
+                <a href="#"><img src="/images/facebook-logo.svg" alt="Facebook"></a>
+                <a href="#"><img src="/images/youtube-logo.svg" alt="YouTube"></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+
+
+
+
+<!-- jQuery (required by Bootstrap and Slick Slider) -->
+<script src="/libs/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+<!-- Slick Slider JS -->
+<script src="/libs/slick/slick.min.js"></script>
+
+
+
+<!-- leave the position of scroll once reloaded -->
+<script>
+    // Save the scroll position in localStorage before the page unloads
+    window.addEventListener("beforeunload", function () {
+        localStorage.setItem("scrollPosition", window.scrollY);
+    });
+
+    // Restore the scroll position from localStorage when the page loads
+    window.addEventListener("load", function () {
+        const scrollPosition = localStorage.getItem("scrollPosition");
+        if (scrollPosition) {
+            window.scrollTo(0, parseInt(scrollPosition, 10));
+        }
+    });
+</script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+        // Initialize the first slider
+        $('.slider-container .slider').slick({
+            appendArrows: $('.slider-navigation'),
+            appendDots: $('.slick-dots-wrapper'),
+            dots: true,
+            arrows: true,
+            prevArrow: $('.slick-prev'),
+            nextArrow: $('.slick-next'),
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+
+        // Define the image paths for each slide
+        const slideImages = [
+            '/images/isis-cube.svg',  // Image for Slide 1
+            '/images/isis-cube.svg',     // Image for Slide 2
+            'images/isis-cube.svg'   // Image for Slide 3
+        ];
+
+        // Define the hotspot positions for each slide
+        const hotspotPositions = [
+            // Positions for Slide 1 (Original)
+            [
+                { top: '12%', left: '38%' },
+                { top: '33%', left: '22%' },
+                { top: '47%', left: '38%' },
+                { top: '83%', left: '35%' }
+            ],
+            // Positions for Slide 2 (Adjusted by 3-4%)
+            [
+                { top: '15.09%', left: '41.85%' },
+                { top: '36.49%', left: '25.03%' },
+                { top: '50.72%', left: '41.13%' },
+                { top: '86.2%', left: '38.12%' }
+            ],
+            // Positions for Slide 3 (You can adjust this as needed)
+            [
+                { top: '30%', left: '30%' },
+                { top: '50%', left: '45%' },
+                { top: '55%', left: '70%' },
+                { top: '65%', left: '55%' }
+            ]
+        ];
+
+
+        const mobileHotspotPositions = [
+            // Mobile Positions for Slide 1
+            [
+                { top: '20%', left: '40%' },
+                { top: '45%', left: '58%' },
+                { top: '60%', left: '35%' },
+                { top: '80%', left: '50%' }
+            ],
+            // Mobile Positions for Slide 2
+            [
+                { top: '25%', left: '35%' },
+                { top: '43%', left: '54%' },
+                { top: '52%', left: '40%' },
+                { top: '76%', left: '50%' }
+            ],
+            // Mobile Positions for Slide 3
+            [
+                { top: '35%', left: '40%' },
+                { top: '55%', left: '40%' },
+                { top: '65%', left: '60%' },
+                { top: '23%', left: '50%' }
+            ]
+        ];
+
+
+        // Change the image and hotspot positions when the slide changes
+        $('.slider-container .slider').on('afterChange', function (event, slick, currentSlide) {
+            const $imageContainer = $('.image-container');
+
+            // Update the main image
+            $imageContainer.find('.cube-img').attr('src', slideImages[currentSlide]);
+
+            // Update hotspot positions
+            const currentHotspots = hotspotPositions[currentSlide];
+            $imageContainer.find('.hotspot').each(function (index) {
+                $(this).css({
+                    top: currentHotspots[index].top,
+                    left: currentHotspots[index].left
+                });
+            });
+        });
+
+
+        // Change the image and hotspot positions when the slide changes
+        $('.slider-container .slider').on('afterChange', function (event, slick, currentSlide) {
+            const $imageContainer = $('.image-container');
+
+            // Update the main image
+            $imageContainer.find('.cube-img').attr('src', slideImages[currentSlide]);
+
+            // Check if the screen width is less than or equal to 768px (mobile screen)
+            const currentHotspots = window.innerWidth <= 768 ? mobileHotspotPositions[currentSlide] : hotspotPositions[currentSlide];
+
+            // Update hotspot positions
+            $imageContainer.find('.hotspot').each(function (index) {
+                if (currentHotspots[index]) { // Ensure the hotspot position exists
+                    $(this).css({
+                        top: currentHotspots[index].top,
+                        left: currentHotspots[index].left
+                    });
+                }
+            });
+        });
+
+
+
+        // Trigger the synchronization for the initial slide (ensures the correct image and hotspots are set on page load)
+        $('.slider-container .slider').slick('slickGoTo', 0);
+    });
+
+
+</script>
+
+
+<script>
+
+
+
+
+    $(document).ready(function () {
+        // Initialize the Slick carousel for the new slider
+        $('.new-slider-container .slider').slick({
+            appendArrows: $('.new-slider-navigation'),
+            appendDots: $('.new-slick-dots-wrapper'),
+            dots: true,
+            arrows: true,
+            prevArrow: $('.new-slick-prev'),
+            nextArrow: $('.new-slick-next'),
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+
+        // Background images array
+        const backgroundImages = [
+            'images/projects.png',  // Background for Slide 1
+            'images/planet.png',    // Background for Slide 2
+            'images/satelite.png'   // Background for Slide 3
+        ];
+
+        // Change the background image with a smooth transition
+        $('.new-slider-container .slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+            const $section = $('#projects');
+
+            // Fade out effect
+            $section.css('opacity', 0.3);
+
+            // Change the background image after a slight delay
+            setTimeout(() => {
+                $section.css('background-image', `url(${backgroundImages[nextSlide]})`);
+                $section.css('opacity', 1); // Fade back in
+            }, 500); // Delay should match half of the transition duration for smoothness
+        });
+    });
+
+</script>
+
+
+<script>
+
+    // Select all hotspots
+    const hotspots = document.querySelectorAll('.hotspot');
+
+    hotspots.forEach(hotspot => {
+        hotspot.addEventListener('click', function () {
+            // Check if this hotspot is already active
+            if (!this.classList.contains('active')) {
+                // Remove 'active' class from any other active hotspots
+                hotspots.forEach(hs => hs.classList.remove('active'));
+            }
+
+            // Toggle the 'active' class on the clicked hotspot
+            this.classList.toggle('active');
+
+            // Update the text content of the hotspot's text container
+            const textContainer = this.querySelector('.hotspot-text');
+            textContainer.textContent = this.getAttribute('data-text');
+        });
+    });
+
+
+
+</script>
+
+
+<!-- on mobile solutions tab active centered in mobile -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll('#myTab .nav-link');
+
+        // Function to center the active tab
+        function centerActiveTab(tab) {
+            const container = document.getElementById('myTab');
+            const containerWidth = container.offsetWidth;
+            const tabWidth = tab.offsetWidth;
+            const tabOffsetLeft = tab.offsetLeft;
+
+            // Calculate the scroll position to center the active tab
+            const scrollPosition = tabOffsetLeft - (containerWidth / 2) + (tabWidth / 2);
+            container.scrollTo({
+                left: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Center the active tab on page load
+        const activeTab = document.querySelector('#myTab .nav-link.active');
+        if (activeTab) {
+            centerActiveTab(activeTab);
+        }
+
+        // Add click event listeners to all tabs
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Delay the centering to make sure the active class has been updated
+                setTimeout(() => centerActiveTab(tab), 100);
+            });
+        });
+    });
+</script>
+
+
+
+
+
+<!-- on mobile '#products' tab active centered in mobile -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll('#customTab .nav-link');
+
+        // Function to center the active tab
+        function centerActiveTab(tab) {
+            const container = document.getElementById('customTab');
+            const containerWidth = container.offsetWidth;
+            const tabWidth = tab.offsetWidth;
+            const tabOffsetLeft = tab.parentElement.offsetLeft;
+
+            // Calculate the scroll position to center the active tab
+            const scrollPosition = tabOffsetLeft - (containerWidth / 2) + (tabWidth / 2);
+            container.scrollTo({
+                left: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Center the active tab on page load
+        const activeTab = document.querySelector('#customTab .nav-link.active');
+        if (activeTab) {
+            centerActiveTab(activeTab);
+        }
+
+        // Add click event listeners to all tabs
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Delay the centering to ensure the active class has been updated
+                setTimeout(() => centerActiveTab(tab), 100);
+            });
+        });
+    });
+</script>
+
+
+
+<!-- news slider mobile -->
+
+
+<script>
+    $(document).ready(function () {
+        function initializeBlogSlider() {
+            // Check if screen width is 768px or less
+            if ($(window).width() <= 768) {
+                if (!$('.blog-slider-container').hasClass('slick-initialized')) {
+                    $('.blog-slider-container').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: true, // Enable arrows
+                        dots: true,   // Enable dots
+                        infinite: true,
+                        adaptiveHeight: true,
+                        prevArrow: $('.blog-nav-prev'), // Updated prev arrow class
+                        nextArrow: $('.blog-nav-next'), // Updated next arrow class
+                        appendDots: $('.blog-nav-dots-wrapper'), // Updated dots wrapper class
+                        appendArrows: $('.blog-slider-navigation') // Ensure navigation container is used
+                    });
+                }
+            } else {
+                if ($('.blog-slider-container').hasClass('slick-initialized')) {
+                    $('.blog-slider-container').slick('unslick');
+                }
+            }
+        }
+
+        // Initialize the blog slider on document ready
+        initializeBlogSlider();
+
+        // Reinitialize the blog slider on window resize
+        $(window).on('resize', function () {
+            initializeBlogSlider();
+        });
+    });
+
+
+
+
+</script>
+
+
+
+
+
+</html>
