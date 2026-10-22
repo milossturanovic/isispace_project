@@ -218,7 +218,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-family: Arial, sans-serif;
-  background: url("/images/hexagon-contact-form-blue.svg") no-repeat center;
+  background: url("images/hexagon-contact-form-blue.svg") no-repeat center;
   background-size: auto;
   background-size: contain;
   transition: all 0.3s ease;
@@ -239,7 +239,7 @@ body {
 
 #buy-page #emailForm .hexagon-button:hover {
   color: var(--Red);
-  background: url("/images/hexagon-contact-form-red.svg") no-repeat center;
+  background: url("images/hexagon-contact-form-red.svg") no-repeat center;
   background-size: auto;
   background-size: contain;
   transition: all 0.3s ease;

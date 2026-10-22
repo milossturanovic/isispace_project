@@ -59,7 +59,7 @@
 
 #products-filter .link-arrow::before,
 #products-filter .link-arrow::after {
-  content: url("/wp-content/uploads/2024/09/arrow-right.svg") !important;
+  content: url("images/arrow-right.svg") !important;
   display: block;
   font-family: "Inter", sans-serif;
   font-size: inherit;
@@ -71,7 +71,7 @@
 }
 
 #products-filter .link-arrow:hover::before {
-  content: url("/wp-content/uploads/2024/09/arrow-right-red.svg") !important;
+  content: url("images/arrow-right-red.svg") !important;
 }
 
 #products-filter .link-arrow.font-reg::before,
@@ -251,7 +251,7 @@
 }
 
 .slider-navigation .slick-prev::before {
-  content: url("/wp-content/uploads/2024/09/arrow-left-slider.svg");
+  content: url("images/arrow-left-slider.svg");
 }
 
 .slider-navigation .slick-next {
@@ -270,7 +270,7 @@
 }
 
 .slider-navigation .slick-next::before {
-  content: url("/wp-content/uploads/2024/09/arrow-right-slider.svg");
+  content: url("images/arrow-right-slider.svg");
 }
 
 .slick-dots li {
@@ -561,7 +561,7 @@
 
 #products-filter .link-arrow::before,
 #products-filter .link-arrow::after {
-  content: url("/wp-content/uploads/2024/09/arrow-right.svg") !important;
+  content: url("images/arrow-right.svg") !important;
   display: block;
   font-family: "Inter", sans-serif;
   font-size: inherit;
@@ -573,7 +573,7 @@
 }
 
 #products-filter .link-arrow:hover::before {
-  content: url("/wp-content/uploads/2024/09/arrow-right-red.svg") !important;
+  content: url("images/arrow-right-red.svg") !important;
 }
 
 #products-filter .link-arrow.font-reg::before,
@@ -811,7 +811,7 @@
 }
 
 #planning .link-arrow:hover::before {
-  content: url("/images/arrow-right-red.svg") !important;
+  content: url("images/arrow-right-red.svg") !important;
 }
 
 #planning .link-arrow.font-reg::before,
@@ -1111,7 +1111,7 @@
 }
 
 #about-section-2 .link-arrow:hover::before {
-  content: url("/images/arrow-right-red.svg") !important;
+  content: url("images/arrow-right-red.svg") !important;
 }
 
 #about-section-2 .link-arrow.font-reg::before,

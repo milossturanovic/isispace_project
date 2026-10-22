@@ -606,7 +606,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 32px; /* 133.333% */
-  text-transform: normal;
+  text-transform: none;
   margin-bottom: 40px;
 }
 

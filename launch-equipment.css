@@ -85,7 +85,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-family: Arial, sans-serif;
-  background: url("/images/hexagon-white-medium.svg") no-repeat center;
+  background: url("images/hexagon-white-medium.svg") no-repeat center;
   background-size: auto;
   background-size: contain;
   transition: all 0.3s ease;
@@ -95,7 +95,7 @@ body {
 
 #hero-rockets .hexagon-button:hover {
   color: var(--Red);
-  background: url("/images/hexagon-red-medium.svg") no-repeat center;
+  background: url("images/hexagon-red-medium.svg") no-repeat center;
   background-size: auto;
   background-size: contain;
   transition: all 0.3s ease;
@@ -308,7 +308,7 @@ body {
 }
 
 #about-section-2 .link-arrow:hover::before {
-  content: url("/images/arrow-right-red.svg") !important;
+  content: url("images/arrow-right-red.svg") !important;
 }
 
 #about-section-2 .link-arrow.font-reg::before,
@@ -420,7 +420,7 @@ body {
 
 #about .link-arrow::before,
 #about .link-arrow::after {
-  content: url("/images/arrow-right.svg");
+  content: url("images/arrow-right.svg");
   display: block;
   font-family: Inter;
   font-size: inherit;
@@ -432,7 +432,7 @@ body {
 }
 
 #about .link-arrow:hover::before {
-  content: url("/images/arrow-right-red.svg");
+  content: url("images/arrow-right-red.svg");
 }
 
 #about .link-arrow.font-reg::before,
@@ -877,7 +877,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-family: Arial, sans-serif;
-  background: url("/images/hexagon-blue-medium.svg") no-repeat center;
+  background: url("images/hexagon-blue-medium.svg") no-repeat center;
   background-size: auto;
   background-size: contain;
   transition: all 0.3s ease;
@@ -887,7 +887,7 @@ body {
 
 #heritage .hexagon-button:hover {
   color: var(--Red);
-  background: url("/images/hexagon-red-medium.svg") no-repeat center;
+  background: url("images/hexagon-red-medium.svg") no-repeat center;
   background-size: auto;
   background-size: contain;
   transition: all 0.3s ease;

@@ -54,8 +54,9 @@
   width: 40px;
   height: 40px;
   transform: translate(-50%, -50%);
-  z-index: 2;
-  transition: transform 0.3s ease, content 0.3s ease;
+  z-index: 3;
+  pointer-events: auto;
+  transition: transform 0.3s ease;
 }
 
 /* Overlay for the employee details */
@@ -70,6 +71,7 @@
   padding: 18px;
   opacity: 0;
   visibility: hidden;
+  z-index: 1;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   box-sizing: border-box;
   display: flex;
